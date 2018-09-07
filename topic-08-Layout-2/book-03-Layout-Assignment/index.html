@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
+
+body
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom:thin solid black;
+}
+
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+    </style>
+  </head>
+
+  <body>
+    
+    
+
+    <div class="ui fixed top pointing inverted stackable menu labmenu">
+      <header class="header item">
+        <i id="toc" class="sitemap icon"></i>
+        <a href="../index.html">
+           Layout and Images: Part Two 
+        </a>
+      </header>
+      <div class="right tab-menu menu">
+        
+          <a class="item" data-tab="Assignment">
+            Assignment
+          </a>
+        
+          <a class="item" data-tab="Details">
+            Details
+          </a>
+        
+          <a class="item" data-tab="Submitting your assignment">
+            Submitting your assignment
+          </a>
+        
+        <div class="item">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="ui segment pushable">
+      <div class="ui inverted labeled icon left inline vertical sidebar menu">
+        <br><br>
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-00-first-html-page/index.html">
+              Create your first HTML page
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-01-formatting-text/index.html">
+              Formatting text
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-02-adding-image/index.html">
+              Adding an image
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-03-adding-lists/index.html">
+              Adding lists
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-04-linking-pages/index.html">
+              Linking pages
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-05-validating-html/index.html">
+              Validating HTML
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-00-Class-and-Id-Selectors/index.html">
+              Id and Class Selectors
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-01-Descendant-Selectors/index.html">
+              Descendant Selectors
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-02-Styling-Lists/index.html">
+              Styling Lists
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-03-CSS Exercises/index.html">
+              CSS Part Two Lab
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-00-Table-Introduction/index.html">
+              Table Introduction
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-01-Styling-Tables/index.html">
+              Table Styling
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-02-Advanced-Tables/index.html">
+              Advanced Tables
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-03-Using-nth-of-type/index.html">
+              Using nth-of-type
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-04-Table-Exercises/index.html">
+              HTML Tables Lab
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-05-Deployment/book-00-Set-up-000webhost/index.html">
+              Set up 000 web host
+            </a>
+          
+        
+          
+            <a class="active item" href="../../topic-06-Design/book-00-Assignment/index.html">
+              Assignment
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-Layout-1/book-00-The-Box-Model/index.html">
+              The Box Model
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-Layout-1/book-01-Layout-Positioning/index.html">
+              Layout and Positioning
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-Layout-1/book-02-Background-Images/index.html">
+              Background Images
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-Layout-2/book-00-Semantic-Layout/index.html">
+              Semantic Layout
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-Layout-2/book-01-Figures-and-captions/index.html">
+              Figures and captions
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-Layout-2/book-02-Navigation/index.html">
+              Navigation
+            </a>
+          
+        
+          
+            <a class="active item" href="../../topic-08-Layout-2/book-03-Layout-Assignment/index.html">
+              Assignment
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-09-Bootstrap-1/book-00-Bootstrap-Introduction/index.html">
+              Bootstrap Introduction
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-09-Bootstrap-1/book-01-Bootstrap-Grid-Introduction/index.html">
+              Bootstrap-Grid-Introduction
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-09-Bootstrap-1/book-02-Bootstrap-Grid-Details/index.html">
+              Bootstrap-Grid-Details
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-Bootstrap-2/book-00-Bootstrap-4-Tables/index.html">
+              Bootstrap 4 Tables
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-Bootstrap-2/book-01-Bootstrap-Images-and-Buttons/index.html">
+              Bootstrap 4 Images and Buttons
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-Bootstrap-2/book-02-Bootstrap-Spacing/index.html">
+              Bootstrap 4 Spacing
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-Bootstrap-2/book-03-Bootstrap-Navs/index.html">
+              Bootstrap 4 Navs
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-Bootstrap-2/book-04-Bootstrap-Dropdowns/index.html">
+              Bootstrap 4 Dropdown Menus
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-Bootstrap-2/book-05-Bootstrap-Navbars/index.html">
+              Bootstrap 4 Navbars
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-11-Forms/book-00-Forms/index.html">
+              HTML5 Forms
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-11-Forms/book-01-Form Elements 1/index.html">
+              HTML5 Elements 1
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-11-Forms/book-02-Form-Elements 2/index.html">
+              HTML5 Elements 2
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-11-Forms/book-03-Form-Layout/index.html">
+              Form Layout
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-11-Forms/book-04-attributes/index.html">
+              input attributes
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-11-Forms/book-05-Exercise/index.html">
+              Form Exercise
+            </a>
+          
+        
+          
+            <a class="active item" href="../../topic-12-Assignment/book-00-Assignment/index.html">
+              Assignment
+            </a>
+          
+        
+      </div>
+      <div class="pusher" tabindex="-1">
+        <div class="ui basic segment" id="labchat">
+          <br>
+          
+            <div  class="ui tab segment lab" data-tab="Assignment">
+              <h1>Assignment Two</h1>
+<p>This assignment is worth 55% of your grade for this module. The assignment submission deadline is Sunday 10th December.</p>
+<p>There are two parts to this assignment:</p>
+<ul>
+<li>Part A: Create a website for a tourist attraction/amenity in the South-East, using semantic structural layout elements</li>
+<li>Part B: Create a second version of the same website that uses a Bootstrap layout</li>
+</ul>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Details">
+              <h1>Assignment Details</h1>
+<h2>Part A: Semantic HTML layout</h2>
+<ul>
+<li>Create a website for a tourist attraction/amenity in the South-East (e.g. the Waterford Greenway, Kilkenny Castle, Wexford Heritage Park)</li>
+<li>The website should make use of:<ul>
+<li>Layout using HTML5 semantic structural elements (i.e. nav, header, footer, etc.)</li>
+<li>CSS layout properties (e.g. position, float)</li>
+<li>Background images</li>
+<li>Figures and figcaptions</li>
+</ul>
+</li>
+<li>You should also include a mix of other content we have covered this semester (e.g. images, paragraphs, headings, links, lists, tables) and apply CSS styles to this content</li>
+<li>All CSS should be contained in an external stylesheet</li>
+<li>The website should consist of 4-5 pages</li>
+<li>Your website should include a nav section with links to all pages in the website</li>
+<li>The website must be hosted on a web server of your choice (e.g. 000webhost)</li>
+<li>Make sure your files validate at:<ul>
+<li><a href="http://validator.w3.org" target="_ blank"><code>http://validator.w3.org</code></a> (for HTML)</li>
+<li><a href="http://jigsaw.w3.org/css-validator" target="_ blank"><code>http://jigsaw.w3.org/css-validator</code></a> (for CSS)</li>
+</ul>
+</li>
+</ul>
+<h2>Part B: Bootstrap layout</h2>
+<ul>
+<li>Create a second version of the website that uses a Bootstrap layout (you can use the same content for both versions of the website).</li>
+<li>The Bootstrap website should make use of:<ul>
+<li>Layout using the Bootstrap grid</li>
+<li>Navtabs or a navbar</li>
+<li>At least one form</li>
+<li>Some other Bootstrap component that we have not covered in class – have a look at these websites for some ideas:<ul>
+<li><a href="http://getbootstrap.com/docs/4.0/components/" target="_ blank"><code>http://getbootstrap.com/docs/4.0/components/</code></a></li>
+<li><a href="https://hackerthemes.com/bootstrap-cheatsheet/" target="_ blank"><code>https://hackerthemes.com/bootstrap-cheatsheet/</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The website must be hosted on a web server of your choice (e.g. 000webhost)</li>
+</ul>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Submitting your assignment">
+              <h2>Submitting your assignment</h2>
+<ul>
+<li>Create an index.html page in the public_html folder on 000webhost that contains links to:<ul>
+<li>Your Part A: Semantic HTML layout website</li>
+<li>Your Part B: Bootstrap layout website</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>On Moodle, in the Assignment Two upload area:<ul>
+<li>Submit the URL of your 000webhost website (e.g. <code>http://yourname.000webhostapp.com</code>)</li>
+<li>Copy and paste the URL into the text box provided.</li>
+</ul>
+</li>
+</ul>
+<p>The assignment submission deadline is <strong>Sunday 10th December at 23:55 p.m.</strong>.</p>
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+</html>
