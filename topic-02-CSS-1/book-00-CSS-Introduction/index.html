@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,221 +7,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <style>
-      
+  </head>
+  <style>
+    
 
-body
-{
+body {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
 }
 
-figcaption
-{
-  margin-bottom: 20px;
+p {
+  margin: 0.5em;
 }
 
-.vertical-align
-{
-  display: flex;
-  align-items: center;
-}
-
-.ui.segment.pushable
-{
-  margin: 0;
-  padding: 1rem 0;
-  overflow: visible;
-}
-
-code
-{
+pre code {
   font-family: "Monaco";
-  font-size: 110%;
+  font-size: 100%;
 }
 
-img
-{
-  padding:1px;
-  border:1px solid black;
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
 }
 
-h1
-{
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
   font-style:italic;
   font-size:130%;
-  border-bottom:thin solid black;
 }
 
-h2
-{
+h2 {
   font-size:110%;
-  border-bottom: thin solid black;
 }
 
-h3
-{
+h3 {
   font-size:100%;
-  border-bottom: thin solid black;
-}
-
-body
-{
-  overflow-y: scroll;
-}
-
-.pushable > .pusher
-{
-  padding-bottom: 1.5rem;
-}
-
-.ui.segment.pushable
-{
-  margin: 0;
-  padding: 1rem 0;
-  overflow: visible;
 }
 
 
 
-    </style>
-  </head>
+  </style>
 
-  <body>
+  <body class="lab">
+
     
-    
-
-    <div class="ui fixed top pointing inverted stackable menu labmenu">
-      <header class="header item">
-        <i id="toc" class="sitemap icon"></i>
-        <a href="../index.html">
-           CSS Part One 
-        </a>
-      </header>
-      <div class="right tab-menu menu">
-        
-          <a class="item" data-tab="CSS Introduction">
-            CSS Introduction
-          </a>
-        
-          <a class="item" data-tab="01">
-            01
-          </a>
-        
-          <a class="item" data-tab="02">
-            02
-          </a>
-        
-        <div class="item">
+  <div class="uk-offcanvas-content">
+    <div id="offcanvas-usage" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav">
           
-        </div>
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-00-first-html-page/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Create your first HTML page
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-01-formatting-text/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Formatting text
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-02-adding-image/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Adding an image
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-03-adding-lists/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Adding lists
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-04-linking-pages/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Linking pages
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-05-validating-html/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Validating HTML
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-00-CSS-Introduction/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+CSS Introduction
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-01-Adding-Style/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Adding Style
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-02-Adding-Colour/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Adding Colour
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-03-Controlling-the-Font/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Controlling the Font
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-04-Text-Properties/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Text Properties
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-05-Styling-Links/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Styling Links
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-06-Grouping-Styles/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Grouping Styles
+                </a>
+              </li>
+            
+          
+        </ul>
       </div>
     </div>
+  </div>
 
-    <div class="ui segment pushable">
-      <div class="ui inverted labeled icon left inline vertical sidebar menu">
-        <br><br>
+
+    <div uk-sticky>
+      <nav class="uk-navbar">
+        <div class="uk-navbar-left">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
+            <li><a href="#offcanvas-usage" uk-icon="icon: menu" , uk-toggle title="Switch Lab" pos="bottom"
+                   uk-tooltip></a></li>
+            
+              <li class="uk-active"><a href="../index.html" uk-icon="icon: chevron-up" uk-toggle title="Parent Topic"
+                                     pos="bottom" uk-tooltip> CSS Part One </a></li>
+            
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill"
+              uk-switcher="connect: .switcher-container">
+            
+              <li><a href="#">CSS Introduction</a></li>
+            
+              <li><a href="#">01</a></li>
+            
+              <li><a href="#">02</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="uk-container uk-container-expand">
+      <ul class="uk-switcher switcher-container">
         
-          
-            <a class="item" href="../../topic-01-HTML/book-00-first-html-page/index.html">
-              Create your first HTML page
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-01-formatting-text/index.html">
-              Formatting text
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-02-adding-image/index.html">
-              Adding an image
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-03-adding-lists/index.html">
-              Adding lists
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-04-linking-pages/index.html">
-              Linking pages
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-05-validating-html/index.html">
-              Validating HTML
-            </a>
-          
-        
-          
-            <a class="active item" href="../../topic-02-CSS-1/book-00-CSS-Introduction/index.html">
-              CSS Introduction
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-01-Adding-Style/index.html">
-              Adding Style
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-02-Adding-Colour/index.html">
-              Adding Colour
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-03-Controlling-the-Font/index.html">
-              Controlling the Font
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-04-Text-Properties/index.html">
-              Text Properties
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-05-Styling-Links/index.html">
-              Styling Links
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-06-Grouping-Styles/index.html">
-              Grouping Styles
-            </a>
-          
-        
-      </div>
-      <div class="pusher" tabindex="-1">
-        <div class="ui basic segment" id="labchat">
-          <br>
-          
-            <div  class="ui tab segment lab" data-tab="CSS Introduction">
-              <h1>Objectives</h1>
+          <li> <h1>Objectives</h1>
 <p>This lab will introduce you to the concepts of Cascading Style Sheets</p>
 <p><a href="#/01">What is CSS?</a></p>
 <p><a href="#/02">How It Works</a></p>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="01">
-              <h1>What is CSS?</h1>
+</li>
+        
+          <li> <h1>What is CSS?</h1>
 <p>We need Cascading Style Sheets (CSS) to add colour, size, columns, and layout; we need CSS to beautify our typography; we need CSS to add background textures and images. If good HTML is the key to an organized, accessible web, then CSS is the key to a beautiful web. CSS puts the design in Web Design.</p>
 <p>CSS is a formatting language, used to provide more customised web pages and
 make it easier to make multiple pages use the same style.</p>
@@ -247,11 +260,9 @@ be white, then any tables will also have white writing in them.</p>
 <li><strong>External Style Sheets</strong> can save you a lot of work</li>
 <li>External Style Sheets are stored in <strong>CSS files</strong></li>
 </ul>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="02">
-              <h1>How It Works</h1>
+</li>
+        
+          <li> <h1>How It Works</h1>
 <p>Cascading Style Sheets contain CSS style rules. For example, let us imagine we had paragraph (&lt;p&gt;)  elements on a page, and we wanted to each paragraph have a background colour of red. Here is the code we would add:</p>
 <pre><code>p {
     background-color:red;
@@ -266,65 +277,24 @@ be white, then any tables will also have white writing in them.</p>
       color: #0000FF;
       background-color:#FFFFE0;
 }</code></pre>
-
-            </div>
-          
-        </div>
-      </div>
+</li>
+        
+      </ul>
     </div>
 
     <script>
-      $(document).on('keydown', function(e) {
-  e = e || window.event;
-  var nextTab;
-  switch (e.which || e.keyCode) {
-    case 37: // left
-      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
-      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
-      nextTab.click();
-      $('.pusher').focus();
-      break;
-
-    case 39: // right
-      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
-      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
-      nextTab.click();
-      $('.pusher').focus();
-      break;
-  }
-});
-
       $(document).ready(function() {
-  $('img').addClass('ui image');
-
-  $('.ui.embed').embed();
-
   const $images = $('.lab img');
   jQuery.each($images, function(i) {
     if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass(
-        'ui basic segment',
-      );
+      const divImg = $(document.createElement('div')).addClass('');
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass(
-        'ui blue ribbon label',
-      );
+      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
       divLabel.append($images[i].alt);
-      $(divLabel).insertBefore($images[i]);
+      $(divLabel).insertAfter($images[i]);
+      $('<br>').insertAfter($images[i]);
     }
   });
-
-  $('.ui.menu .item').tab({
-    history: true,
-    historyType: 'hash',
-  });
-
-  $('.popup').popup();
-
-  $('.ui.sidebar')
-    .sidebar({ context: $('.pushable') })
-    .sidebar('setting', 'transition', 'slide out')
-    .sidebar('attach events', '#toc');
 });
 
     </script>
