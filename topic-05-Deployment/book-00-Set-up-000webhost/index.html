@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
+
+body {
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
+}
+
+p {
+  margin: 0.5em;
+}
+
+pre code {
+  font-family: "Monaco";
+  font-size: 100%;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
+}
+
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-style:italic;
+  font-size:130%;
+}
+
+h2 {
+  font-size:110%;
+}
+
+h3 {
+  font-size:100%;
+}
+
+
+
+    </style>
+  </head>
+
+  <body>
+    
+    
+
+    <div class="ui fixed top pointing inverted stackable menu labmenu">
+      <header class="header item">
+        <i id="toc" class="sitemap icon"></i>
+        
+          <a href="../index.html">  Deployment  </a>
+        
+      </header>
+      <div class="right tab-menu menu">
+        
+          <a class="item" data-tab="Set up 000 web host">
+            Set up 000 web host
+          </a>
+        
+          <a class="item" data-tab="01">
+            01
+          </a>
+        
+          <a class="item" data-tab="02">
+            02
+          </a>
+        
+          <a class="item" data-tab="03">
+            03
+          </a>
+        
+          <a class="item" data-tab="04">
+            04
+          </a>
+        
+          <a class="item" data-tab="Exercise 01">
+            Exercise 01
+          </a>
+        
+          <a class="item" data-tab="Exercise 02">
+            Exercise 02
+          </a>
+        
+      </div>
+    </div>
+
+    <div class="ui segment pushable">
+      <div class="ui inverted labeled icon left inline vertical sidebar menu">
+        <br><br>
+        
+          
+            <a class="item" href="../../topic-00-Assignment/book-00-Assignment/index.html">
+              Assignment
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-00-first-html-page/index.html">
+              Create your first HTML page
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-01-formatting-text/index.html">
+              Formatting text
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-02-adding-image/index.html">
+              Adding an image
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-03-adding-lists/index.html">
+              Adding lists
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-04-linking-pages/index.html">
+              Linking pages
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-05-validating-html/index.html">
+              Validating HTML
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-00-CSS-Introduction/index.html">
+              CSS Introduction
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-01-Adding-Style/index.html">
+              Adding Style
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-02-Adding-Colour/index.html">
+              Adding Colour
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-03-Controlling-the-Font/index.html">
+              Controlling the Font
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-04-Text-Properties/index.html">
+              Text Properties
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-05-Styling-Links/index.html">
+              Styling Links
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-06-Grouping-Styles/index.html">
+              Grouping Styles
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-00-Class-and-Id-Selectors/index.html">
+              Id and Class Selectors
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-01-Descendant-Selectors/index.html">
+              Descendant Selectors
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-02-Styling-Lists/index.html">
+              Styling Lists
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-03-CSS-Exercises/index.html">
+              CSS Part Two Lab
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-00-Table-Introduction/index.html">
+              Table Introduction
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-01-Styling-Tables/index.html">
+              Table Styling
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-02-Advanced-Tables/index.html">
+              Advanced Tables
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-03-Using-nth-of-type/index.html">
+              Using nth-of-type
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-04-Table-Exercises/index.html">
+              HTML Tables Lab
+            </a>
+          
+        
+          
+            <a class="active item" href="../../topic-05-Deployment/book-00-Set-up-000webhost/index.html">
+              Set up 000 web host
+            </a>
+          
+        
+      </div>
+      <div class="pusher" tabindex="-1">
+        <div class="ui basic segment" id="labchat">
+          <br>
+          
+            <div  class="ui tab segment lab" data-tab="Set up 000 web host">
+              <h1>Objectives</h1>
+<p>In this lab you will create an account with 000webhost, a web hosting company that provide free accounts for learners. You will also deploy a website that we have worked on over the past few weeks.</p>
+<ul>
+<li><a href="#/01">Create an account</a></li>
+<li><a href="#/02">File Manager</a></li>
+<li><a href="#/03">Upload files</a></li>
+<li><a href="#/04">View the website</a></li>
+</ul>
+<hr>
+
+<h2>Resources for this Lab</h2>
+<ul>
+<li>Create a new folder called Week05.  </li>
+<li>Download the following file: <a href="archives/Lab01.zip">Lab01</a> there. </li>
+<li>Extract (unzip) the contents. You will see a file, <strong>index.html</strong> and a folder called <strong>exercise1</strong>, which contains four HTML files, a subfolder called css and a CSS file.</li>
+</ul>
+<h3>Prepare the front page</h3>
+<ul>
+<li>Open <em>index.html</em> for editing.</li>
+<li>Change the name used (Joe Bloggs) to your name and save the file.</li>
+</ul>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="01">
+              <h1>Create an account with 000webhost</h1>
+<p>Go to <a href="http://www.000webhost.com" target="_blank"><code>http://www.000webhost.com</code></a> and select the Free Hosting option. Click on Sign up for free.</p>
+<p><img src="./img/01.png" alt=""></p>
+<p>Next, add your email, a password of your choosing, and a name for your website. </p>
+<p><img src="./img/02.png" alt=""></p>
+<p>When asked, select the &quot;It&#39;s ok, I want to learn&quot; option.</p>
+<p><img src="./img/03.png" alt=""></p>
+<p>You will then be logged in and you will need to verify your email address. </p>
+<p><img src="./img/web10.PNG" alt=""></p>
+<p>Check the email address that you provided and click the link to verify that you have signed up for 000webhost&#39;s services.</p>
+<p>Once you have completed this step, you can start uploading your website files, using option 3 (third icon). This opens up the <em>File Manager</em>.</p>
+<p><img src="./img/web6.PNG" alt=""></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="02">
+              <h1>File Manager</h1>
+<p>Once you open the 000webhost file manager, you will see there is a folder already created called public_html. All of our files need to be placed within this folder. </p>
+<p><img src="./img/web2.PNG" alt=""></p>
+<p>We will upload a file first. This file can be found in Lab01.</p>
+<p>Click the cloud icon (fourth icon) to add upload the file.</p>
+<p><img src="./img/web1.PNG" alt=""></p>
+<p>Now, see the uploaded file.</p>
+<p><img src="./img/web3.PNG" alt=""></p>
+<p>Now, click the plus icon (second icon) to add a new folder. Name the folder <em>exercise1</em>. </p>
+<p>Now, see the created folder.</p>
+<p><img src="./img/web4.PNG" alt=""></p>
+<p>Double-click to get inside the exercise1 folder. In the next step, we will add files to this folder....</p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="03">
+              <h1>Upload files</h1>
+<h2>Adding files in 000webhost</h2>
+<p>Back in the 000webhost File Manager, Click the cloud icon (fourth icon) to add/upload the files.</p>
+<p><img src="./img/web1.PNG" alt=""></p>
+<p>Locate the exercise folder. Select the HTML pages for upload; you can use Shift+Click to select all four in one go.</p>
+<p><img src="./img/13.png" alt=""></p>
+<p>See the uploaded file in the folder.</p>
+<p><img src="./img/web5.PNG" alt=""></p>
+<p>Next, create a folder (plus icon on the top right) called <em>css</em> within the exercise1 folder. </p>
+<p><img src="./img/web12.PNG" alt=""></p>
+<p>Upload the <em>style.css</em> file into the css folder. </p>
+<p><img src="./img/web13.PNG" alt=""> </p>
+<p>Your file and folder structure on 000webhost should mirror the structure of the files and folders on your own computer; it&#39;s very important 
+that they match exactly. At the end of this process, your <em>exercise1</em> folder should have these contents:</p>
+<p><img src="./img/web12.PNG" alt=""></p>
+<p>In the next step, we&#39;ll view our website. </p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="04">
+              <h1>View your website</h1>
+<p>Once you are finished uploading files, you can leave the File Manager area (just close the tab/window) and go back to the main 000webhost dashboard. </p>
+<p>You will see a link to your website on this screen e.g. mlyng.000webhostapp.com. This is a link so click it to view your website.</p>
+<p><img src="./img/web11.PNG" alt=""></p>
+<p>Now you will see our Welcome page.</p>
+<p><img src="./img/web8.PNG" alt=""></p>
+<p>Click on the link <em>Class Exercise One</em> </p>
+<p>You should now see your test website, which looks as follows:</p>
+<p><img src="./img/web14.PNG" alt=""></p>
+<p>Notice the URL.</p>
+<p>Congratulations! You just deployed your first website. Now try the exercises in the next step, where you will add some extra content.</p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Exercise 01">
+              <h1>Exercise 01</h1>
+<h2>Add a table to events.html</h2>
+<ul>
+<li>Last week, we created a table on the events.html page. Copy the HTML code from the events.html page you worked on last week to the events.html file in the testsite folder. Don&#39;t forget to also copy all of the CSS styles into the style.css file. </li>
+<li>Once you have made these changes to events.html and style.css, use the 000webhost manager to upload these files again (into the appropriate locations).</li>
+<li>View your website to confirm that the table now appears.</li>
+</ul>
+<h2>Add a gallery page to the website</h2>
+<ul>
+<li>You will now add a whole new page to the Bubble Under website. This page should be called gallery.html. </li>
+<li>The top section of the page should have the same contents as the other pages in the site - a H1 heading, paragraph with the tagline id applied, and the menu links. Don&#39;t forget to update the menu to include gallery.html! This should be done for every page in the site.</li>
+</ul>
+<p><img src="./img/19.png" alt=""></p>
+<ul>
+<li>After the menu links, add a H2 heading to the gallery.html page.</li>
+<li>Add a paragraph of text (it can be just a line or two - make up the text yourself!)</li>
+<li>Next, do an image search to find three images that relate to scuba diving. Create a subfolder in the testsite folder called &#39;images&#39; and save the three images in there.</li>
+<li>Add the images to your webpage. If you need a reminder of how to do this, look back at Week 1  <a href="http://witwebdev1.github.io/webdev1/topic-01-HTML/book-02-adding-image/index.html" target="_blank">(HTML Basics, Adding an Image)</a></li>
+<li>View gallery.html in your browser and check that everything looks as it should.</li>
+</ul>
+<h2>Upload your changes to 000webhost</h2>
+<ul>
+<li>Upload gallery.html and the other HTML pages to 000webhost </li>
+<li>Create an images subfolder and upload your images there (remember the folder structure should mirror your own computer exactly).</li>
+<li>View the website by going to the web address (/testsite) and verify that the changes are reflected there. </li>
+</ul>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Exercise 02">
+              <h1>Exercise 02</h1>
+<p>Create a new folder (<em>exercise2</em>) inside the File Manager on your account on 000webhost.com. Create from scratch the following page and deploy it to the new folder.
+The links are external (<a href="http://www.imdb.com">http://www.imdb.com</a>) and should open in a new tab. The images are only examples so choose your own images. Replace the text with your own information also. Save the file as <em>index.html</em>.</p>
+<p><img src="./img/ex2.png" alt=""></p>
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass('');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertAfter($images[i]);
+      $('<br>').insertAfter($images[i]);
+    }
+  });
+});
+
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+</html>
