@@ -32,8 +32,21 @@ nav{
   margin-bottom:5%;
 }
 
+aside{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10em;
+  padding:2%;
+  background-color: #99CC99;
+  border: solid 1px #000;
+  margin-bottom:5%;
+}
+
+
 section {
   margin-left:14em;
+  margin-right:14em;
   border: 1px solid #000;
   background-color: white;
   color: black;

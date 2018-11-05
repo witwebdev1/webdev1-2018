@@ -403,8 +403,7 @@ footer {
 <ul>
 <li>A container div, which will control the entire page.</li>
 <li>A header element, which will contain any header content.</li>
-<li>A main element, which will control the navigation and content areas.</li>
-<li>A nav element, which will contain any links.</li>
+<li>A nav element, which will contain any links (to be placed on left hand side of the browser window).</li>
 <li>An aside element, which will contain extra information (to be placed on right hand side of the browser window).</li>
 <li>A section element, which contains the content information.</li>
 <li>A footer element, which will contain any footer content.</li>
@@ -413,7 +412,6 @@ footer {
 
 &lt;div id=&quot;container&quot;&gt;
   &lt;header&gt;this is the header&lt;/header&gt;
-  &lt;main&gt;
     &lt;nav&gt;
       &lt;ul&gt;
         &lt;li&gt;&lt;a href=&quot;http://www.wit.ie&quot;&gt;Waterford IT&lt;/a&gt;&lt;/li&gt;
@@ -427,7 +425,6 @@ footer {
          &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pulvinar eros eu diam. Quisque ut orci ut nunc lobortis aliquam. Praesent metus. Pellentesque luctus. Suspendisse nisl.&lt;/p&gt;
          &lt;p&gt;Morbi convallis lectus a elit. Morbi augue. Aenean quis ipsum non dui interdum egestas. Suspendisse quis turpis. Suspendisse et sem in neque dictum hendrerit. Nulla pede.&lt;/p&gt;
     &lt;/section&gt;
-  &lt;/main&gt;
   &lt;footer&gt;footer&lt;/footer&gt;
 &lt;/div&gt; &lt;!-- container --&gt;
 
@@ -443,6 +440,7 @@ footer {
 
 #container {
   margin: 2em;
+  overflow:auto;
 }
 
 header {
@@ -450,10 +448,6 @@ header {
   padding: 3%;
   border: 1px solid #000;
   margin-bottom:5%;
-}
-
-main {
-  overflow:hidden;
 }
 
 nav {
@@ -502,11 +496,12 @@ nav ul {
 <ul>
 <li>A container div, which will control the entire page.</li>
 <li>A header element, which will contain any header content.</li>
-<li>A main element, which will subdivide the page further:</li>
+<li>A main element, which will be the parent element for positioning the elements.</li>
 <li>A section element, which contains the content information.</li>
-<li>A nav element, which will contain any links (to be placed on right hand side of the browser window).</li>
+<li>A nav element, which will contain any links (to be placed on left hand side of the browser window).</li>
+<li>An aside element, which will contain extra information (to be placed on right hand side of the browser window).</li>
 </ul>
-<pre><code class="lang-html">&lt;body&gt;
+<pre><code>&lt;body&gt;
 
 &lt;div id=&quot;container&quot;&gt;
   &lt;header&gt;
@@ -523,6 +518,9 @@ nav ul {
          &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pulvinar eros eu diam. Quisque ut orci ut nunc lobortis aliquam. Praesent metus. Pellentesque luctus. Suspendisse nisl.&lt;/p&gt;
          &lt;p&gt;Morbi convallis lectus a elit. Morbi augue. Aenean quis ipsum non dui interdum egestas. Suspendisse quis turpis. Suspendisse et sem in neque dictum hendrerit. Nulla pede.&lt;/p&gt;
     &lt;/section&gt;
+    &lt;aside&gt;
+     &lt;p&gt;Morbi convallis lectus a elit. Morbi augue. Aenean quis ipsum non dui interdum egestas. Suspendisse quis turpis. Suspendisse et sem in neque dictum hendrerit. Nulla pede.&lt;/p&gt;
+    &lt;/aside&gt;
   &lt;/main&gt; &lt;!-- main --&gt;
 &lt;/div&gt; &lt;!-- container --&gt;
 
@@ -565,12 +563,25 @@ nav{
 
 section {
   margin-left:14em;
+  margin-right:14em;
   border: 1px solid #000;
   background-color: white;
   color: black;
   padding: 0 2%;
   min-width:10em;
 }
+
+aside{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10em;
+  padding:2%;
+  background-color: #99CC99;
+  border: solid 1px #000;
+  margin-bottom:5%;
+}
+
 
 nav ul {
   list-style-type: none;
@@ -596,16 +607,15 @@ section h2 {
 <ul>
 <li>After the opening <code>&lt;body&gt;</code> tag add a div called container (i.e. <code>&lt;div id = &quot;container&quot;&gt;</code>).</li>
 <li>Within the container div, add a header element. The opening header tag should be before the opening <code>&lt;h1&gt;</code> tag and the closing header tag should be after the closing <code>&lt;/h1&gt;</code> tag.</li>
-<li>Next, add a <code>&lt;main&gt;</code> element to contain the navigation and section structural elements.</li>
 <li>Add <code>&lt;nav&gt;</code> tags around the <code>&lt;ul&gt;</code> (the unordered list contains a list of links which are the navigation for the site.)</li>
 <li>After the closing <code>&lt;/nav&gt;</code> tag, put a <code>&lt;section&gt;</code> tag. The section element should surround the rest of the content on the page (the h2 heading and two paragraphs).</li>
-<li>At the end of the page (before the closing <code>&lt;body&gt;</code> tag) including the closing tags for the section element, the main element and the container div (i.e.<code>&lt;/section&gt;&lt;/main&gt;&lt;/div&gt;</code>)</li>
-<li>You will need to add these structural tags to all three of the HTML pages in the site: index.htm, director.htm and aboutwit.htm.</li>
+<li>At the end of the page (before the closing <code>&lt;body&gt;</code> tag) including the closing tags for the section element,  and the container div (i.e.<code>&lt;/section&gt;&lt;/div&gt;</code>)</li>
+<li>You will need to add these structural tags to all three of the HTML pages in the site: index.html, director.html and aboutwit.html.</li>
 <li>The finished HTML code should look like this:</li>
 </ul>
 </li>
 </ul>
-<p><img src="./img/ex1a.png" alt=""></p>
+<p><img src="./img/code.PNG" alt=""></p>
 <ul>
 <li><p>Add styles to the .css file</p>
 <ul>
@@ -614,13 +624,13 @@ section h2 {
 <li>background-color: #fdf8f2</li>
 <li>margin: 3%</li>
 <li>padding: 1%</li>
+<li>overflow: auto</li>
 </ul>
 </li>
 <li>Add a background colour of #256290 to the nav and header.</li>
-<li>Add padding of 2em to the header.</li>
+<li>Add padding of 2em to the header, and a bottom margin of 0.5em.</li>
 <li>Change the font colour property of the h1, a:link, and a:visited selectors to white.</li>
 <li>The navigation structural element should be 13em wide and floated to the left.</li>
-<li>The main element should have the overflow property set to auto. It should also have a top margin of 0.5em.</li>
 <li>The section structural element should be moved in from the left by 14em using the margin-left property.</li>
 </ul>
 </li>

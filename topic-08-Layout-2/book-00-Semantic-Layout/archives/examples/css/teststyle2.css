@@ -7,6 +7,7 @@ body, html {
 
 #container {
   margin: 2em;
+  overflow:hidden;
 }
 
 header {
@@ -16,9 +17,7 @@ header {
   margin-bottom:5%;
 }
 
-main {
-  overflow:hidden;
-}
+
 
 nav {
   float: left;
