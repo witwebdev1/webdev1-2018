@@ -1,0 +1,17 @@
+  html,body {
+      margin: 0;
+      padding: 0;
+      width:100%;
+      height:100%;
+  }
+.column {
+  background-color: azure;
+  border-style: groove;
+}
+
+.ui.container {
+  margin-top: 35px;
+  border:solid black 1px;
+}
+
+  

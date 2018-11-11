@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
+
+body {
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
+}
+
+p {
+  margin: 0.5em;
+}
+
+pre code {
+  font-family: "Monaco";
+  font-size: 100%;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
+}
+
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-style:italic;
+  font-size:130%;
+}
+
+h2 {
+  font-size:110%;
+}
+
+h3 {
+  font-size:100%;
+}
+
+
+
+    </style>
+  </head>
+
+  <body>
+    
+    
+
+    <div class="ui fixed top pointing inverted stackable menu labmenu">
+      <header class="header item">
+        <i id="toc" class="sitemap icon"></i>
+        
+          <a href="../index.html">  Semantic UI-1  </a>
+        
+      </header>
+      <div class="right tab-menu menu">
+        
+          <a class="item" data-tab="Semantic UI Grid">
+            Semantic UI Grid
+          </a>
+        
+          <a class="item" data-tab="01">
+            01
+          </a>
+        
+          <a class="item" data-tab="02">
+            02
+          </a>
+        
+          <a class="item" data-tab="03">
+            03
+          </a>
+        
+          <a class="item" data-tab="04">
+            04
+          </a>
+        
+          <a class="item" data-tab="05">
+            05
+          </a>
+        
+          <a class="item" data-tab="06">
+            06
+          </a>
+        
+          <a class="item" data-tab="Exercise-1">
+            Exercise-1
+          </a>
+        
+          <a class="item" data-tab="Exercise-2">
+            Exercise-2
+          </a>
+        
+      </div>
+    </div>
+
+    <div class="ui segment pushable">
+      <div class="ui inverted labeled icon left inline vertical sidebar menu">
+        <br><br>
+        
+          
+            <a class="item" href="../../topic-00-Assignments/book-00-Assignment-01/index.html">
+              Assignment One
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-00-Assignments/book-00-Assignment-02/index.html">
+              Assignment Two
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-00-first-html-page/index.html">
+              Create your first HTML page
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-01-formatting-text/index.html">
+              Formatting text
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-02-adding-image/index.html">
+              Adding an image
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-03-adding-lists/index.html">
+              Adding lists
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-04-linking-pages/index.html">
+              Linking pages
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-05-validating-html/index.html">
+              Validating HTML
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-00-CSS-Introduction/index.html">
+              CSS Introduction
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-01-Adding-Style/index.html">
+              Adding Style
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-02-Adding-Colour/index.html">
+              Adding Colour
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-03-Controlling-the-Font/index.html">
+              Controlling the Font
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-04-Text-Properties/index.html">
+              Text Properties
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-05-Styling-Links/index.html">
+              Styling Links
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-06-Grouping-Styles/index.html">
+              Grouping Styles
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-00-Class-and-Id-Selectors/index.html">
+              Id and Class Selectors
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-01-Descendant-Selectors/index.html">
+              Descendant Selectors
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-02-Styling-Lists/index.html">
+              Styling Lists
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-03-CSS-Exercises/index.html">
+              CSS Part Two Lab
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-00-Table-Introduction/index.html">
+              Table Introduction
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-01-Styling-Tables/index.html">
+              Table Styling
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-02-Advanced-Tables/index.html">
+              Advanced Tables
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-03-Using-nth-of-type/index.html">
+              Using nth-of-type
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-04-Table-Exercises/index.html">
+              HTML Tables Lab
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-05-Deployment/book-00-Set-up-000webhost/index.html">
+              Set up 000 web host
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-05-Deployment/book-01-Set-up-5gbfree/index.html">
+              Set up 5gbfree
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-Layout-1/book-00-The-Box-Model/index.html">
+              The Box Model
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-Layout-1/book-01-Layout-Positioning/index.html">
+              Layout and Positioning
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-Layout-1/book-02-Background-Images/index.html">
+              Background Images
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-Layout-2/book-00-Semantic-Layout/index.html">
+              Semantic Layout
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-Layout-2/book-01-Figures-and-captions/index.html">
+              Figures and captions
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-Layout-2/book-02-Navigation/index.html">
+              Navigation
+            </a>
+          
+        
+          
+            <a class="active item" href="../../topic-09-semantic-ui-1/book-00-Semantic-Grid/index.html">
+              Semantic UI Grid
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-09-semantic-ui-1/book-02-Semantic-Elements/index.html">
+              Semantic UI Elements
+            </a>
+          
+        
+      </div>
+      <div class="pusher" tabindex="-1">
+        <div class="ui basic segment" id="labchat">
+          <br>
+          
+            <div  class="ui tab segment lab" data-tab="Semantic UI Grid">
+              <h1>Objective</h1>
+<p>This lab looks at Semantic UI Containers, and the Semantic UI Grid System.</p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="01">
+              <h1>Semantic UI Containers</h1>
+<p>Containers provide the foundation for page layout. A container is an element designed to contain page elements to a reasonable maximum width based 
+on the size of a user&#39;s screen. This is useful to couple with other UI elements like <code>grid</code> or <code>menu</code> to restrict their width to a reasonable size for display.</p>
+<p>Semantic UI requires a containing element to wrap elements and contain its grid system (more on the grid system next). The Semantic UI container class was 
+created specifically for this purpose.</p>
+<h2>Container Sizes</h2>
+<p>Containers are designed to responsively adjust their maximum width based on the size of the screen on which they are appearing.</p>
+<p><img src="img/container.PNG" alt=""></p>
+<p><strong>Note:</strong> There is another computer device (widescreen), which is for device width &gt; 1920px.</p>
+<h2>UI Container</h2>
+<p>An <code>ui container</code> is a fixed width element that wraps your site&#39;s content. It remains a constant size and uses margin to center. 
+Containers are the simplest way to center page content inside a grid.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+  Example of a fixed width container which is set using the &lt;code&gt;.ui.container&lt;/code&gt; class.
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg1.html" target = "_ blank">Example</a></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="02">
+              <h1>Semantic UI Grid System</h1>
+<p>Grid systems enable you to create advanced layouts using rows and columns.</p>
+<p>Semantic UI uses a 16 column grid, where each column is of equal width with spaces in between. These spaces are called <code>gutters</code>. 
+The use of grids is by far the most popular method for dividing and utilizing space. Regardless of which framework you choose to develop with a 
+solid understanding of the grid layout will allow you the most flexibility and control in your designs.</p>
+<p>If you would like to divide your content into 4 sections across the page it&#39;s as simple as dividing the 16 total columns by 4, which equals 4. 
+This means you&#39;ll need to specify that each column takes up a width of four in order to have four columns across the page.</p>
+<p><img src="img/grid0.png" alt=""></p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+    &lt;div class=&quot;ui grid&quot;&gt;
+      &lt;div class=&quot;four wide column&quot;&gt;One&lt;/div&gt;
+      &lt;div class=&quot;four wide column&quot;&gt;Two&lt;/div&gt;
+      &lt;div class=&quot;four wide column&quot;&gt;Three&lt;/div&gt;
+      &lt;div class=&quot;four wide column&quot;&gt;Four&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg2.html" target = "_ blank">Example</a></p>
+<p>Here&#39;s another example of a Semantic UI grid:
+<img src="img/grid1.png" alt=""></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="03">
+              <h1>Grid Columns and Rows</h1>
+<p>As we saw in our previous example, to create a grid structure we require the <code>ui grid</code> class. Using a grid makes content appear to flow more naturally on your page.</p>
+<h2>Columns</h2>
+<p>Grids divide horizontal space into indivisible units called <strong>columns</strong>. All columns in a grid must specify their width as proportion of the total 
+available row width.</p>
+<p>All grid systems choose an arbitrary column count to allow per row. Semantic&#39;s default theme uses <strong>16</strong> columns.</p>
+<p>The following example creates a grid with 6 columns (3 on the first line and 3 on the next line). The browser detects that the fourth column goes on the next line as 
+the grid is a three column grid structure.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;section class=&quot;ui three column grid&quot;&gt;
+&lt;div class=&quot;ui column&quot;&gt;
+             &lt;h2&gt;Frontend&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui  column&quot;&gt;
+            &lt;h2&gt;Serverside&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui  column&quot;&gt;
+             &lt;h2&gt;Databases&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui column&quot;&gt;
+             &lt;h2&gt;Frontend&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui  column&quot;&gt;
+            &lt;h2&gt;Serverside&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui  column&quot;&gt;
+
+             &lt;h2&gt;Databases&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg3.html" target = "_ blank">Example</a></p>
+<h2>Rows</h2>
+<p>In the above example the new line is implicitly a new row. Most grids do not need to specify rows. Content will automatically flow to the next row 
+when all the grid columns are taken in the current row.</p>
+<p>We can explicitly specify a new row also. Rows are groups of columns which are aligned horizontally.</p>
+<p>Rows can either be explicit, marked with an additional row element, or implicit, automatically occurring when no more space is left in a previous row.</p>
+<p>After each group of columns vertical spacing is added to separate each group of columns, creating vertical rhythm.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;section class=&quot;ui three column grid&quot;&gt;
+&lt;section class=&quot;ui row&quot;&gt;
+&lt;div class=&quot;ui column&quot;&gt;
+             &lt;h2&gt;Frontend&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui  column&quot;&gt;
+            &lt;h2&gt;Serverside&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui  column&quot;&gt;
+             &lt;h2&gt;Databases&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;ui row&quot;&gt;
+&lt;div class=&quot;ui column&quot;&gt;
+             &lt;h2&gt;Frontend&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui  column&quot;&gt;
+            &lt;h2&gt;Serverside&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui  column&quot;&gt;
+             &lt;h2&gt;Databases&lt;/h2&gt;
+             &lt;p&gt;
+              ...
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg4.html" target = "_ blank">Example</a></p>
+<p>As you can see the above examples render the same. Rows are useful when you wish to explicitly force a new row as in the 
+following <a href="archives/Class Htmls/eg4a.html" target = "_ blank">example</a>.</p>
+<h3>Divided Grid</h3>
+<p>A grid can have dividers between its columns. It requires the <code>ui row</code> class.</p>
+<pre><code>&lt;section class=&quot;ui three column divided grid&quot;&gt;
+&lt;section class=&quot;ui row&quot;&gt;
+...
+&lt;/section&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg5.html" target = "_ blank">Example</a></p>
+<h3>Vertically Divided Grid</h3>
+<p>A grid can have dividers between rows. It also requires the <code>ui row</code> class.</p>
+<pre><code>&lt;section class=&quot;ui three column vertically divided grid&quot;&gt;
+&lt;section class=&quot;ui row&quot;&gt;
+...
+&lt;/section&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg6.html" target = "_ blank">Example</a></p>
+<h3>Celled Grid</h3>
+<p>A grid can have rows divided into cells.It also requires the <code>ui row</code> class.</p>
+<pre><code>&lt;section class=&quot;ui three column celled grid&quot;&gt;
+&lt;section class=&quot;ui row&quot;&gt;
+...
+&lt;/section&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg7.html" target = "_ blank">Example</a></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="04">
+              <h1>Grid Sizes</h1>
+<p>We can vary the sizes of the columns in the grid and the columns do not have to be even sized. Column widths can be specified using <code>(x) wide</code> class names. 
+If a column cannot fit in a row it will automatically flow to the next row. The following examples prodicce different sized columns.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui grid&quot;&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column A&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column B&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column C&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column D&lt;/div&gt;
+  &lt;div class=&quot;two wide column&quot;&gt;Column E&lt;/div&gt;
+  &lt;div class=&quot;eight wide column&quot;&gt;Column F&lt;/div&gt;
+  &lt;div class=&quot;six wide column&quot;&gt;Column G&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg8.html" target = "_ blank">Example</a></p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui grid&quot;&gt;
+  &lt;div class=&quot;eight wide  column&quot;&gt;Column A&lt;/div&gt;
+  &lt;div class=&quot;eight wide column&quot;&gt;Column B&lt;/div&gt;
+  &lt;div class=&quot;ten wide column&quot;&gt;Column C&lt;/div&gt;
+  &lt;div class=&quot;six wide column&quot;&gt;Column D&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column E&lt;/div&gt;
+  &lt;div class=&quot;twelve wide column&quot;&gt;Column F&lt;/div&gt;
+  &lt;div class=&quot;two wide column&quot;&gt;Column G&lt;/div&gt;
+  &lt;div class=&quot;fourteen wide column&quot;&gt;Column H&lt;/div&gt;
+  &lt;div class=&quot;sixteen wide column&quot;&gt;Column I&lt;/div&gt;
+  &lt;div class=&quot;twelve wide column&quot;&gt;Column J&lt;/div&gt;
+  &lt;div class=&quot;ten wide column&quot;&gt;Column K&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg9.html" target = "_ blank">Example</a></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="05">
+              <h1>Varying Grids</h1>
+<h2>Nesting Grids</h2>
+<p>Grids can be placed inside of other grids, letting you sub-divide columns.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui two column grid&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;ui three column grid&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;Column A&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;Column B&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;Column C&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;Column D&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;Column E&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;ui grid&quot;&gt;
+      &lt;div class=&quot;ten wide column&quot;&gt;Column F&lt;/div&gt;
+      &lt;div class=&quot;six wide column&quot;&gt;Column G&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg10.html" target = "_ blank">Example</a></p>
+<h2>Coloured</h2>
+<p>Grids can use named colours variations to add background colours, but only with <code>padded</code> grid that do not include negative margins.</p>
+<p>To include a colour that is not available in the default palette its perfectly fine to use CSS.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui equal width center aligned padded grid&quot;&gt;
+    &lt;div class=&quot;olive column&quot;&gt;
+      Olive
+    &lt;/div&gt;
+    &lt;div class=&quot;black column&quot;&gt;
+      Black
+    &lt;/div&gt;
+    &lt;div class=&quot;column&quot; style=&quot;background-color: #869D05;color: #FFF;&quot;&gt;
+      Custom Column
+    &lt;/div&gt;
+    &lt;div class=&quot;black column&quot;&gt;
+      Black
+    &lt;/div&gt;
+    &lt;div class=&quot;olive column&quot;&gt;
+      Olive
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg11.html" target = "_ blank">Example</a></p>
+<p><a href="archives/Class Htmls/eg12.html" target = "_ blank">Another Example</a></p>
+<h2>Automatic Column Count</h2>
+<p>The equal width variation will automatically divide column width evenly. This is useful with dynamic content where you do not know the column count in advance.</p>
+<p>We can see this used in the previous example.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui equal width center aligned padded grid&quot;&gt;
+...
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<h2>Centering Content</h2>
+<p>If a row does not take up all sixteen grid columns, you can use a <code>centered</code> variation to center the column contents inside the grid.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui two column centered grid&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;Column A&lt;/div&gt;
+  &lt;div class=&quot;four column centered row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;Column B&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;Column C&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg13.html" target = "_ blank">Example</a></p>
+<h2>Significant Word Order</h2>
+<p>Grids include many variations for adjusting things like vertical or horizontal alignment, text alignment, or default gutter sizes.</p>
+<p>Some multi-word variations, like <code>left floated</code> or <code>right aligned</code> or <code>middle aligned</code> are word-order dependent and require you to use adjacent class names.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui grid&quot;&gt;
+  &lt;div class=&quot;four column row&quot;&gt;
+    &lt;div class=&quot;left floated column&quot;&gt;Column A&lt;/div&gt;
+    &lt;div class=&quot;right floated column&quot;&gt;Column B&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;three wide column&quot;&gt;Column C&lt;/div&gt;
+    &lt;div class=&quot;eight wide column&quot;&gt;Column D&lt;/div&gt;
+    &lt;div class=&quot;five wide column&quot;&gt;Column E&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg14.html" target = "_ blank">Example</a></p>
+<p>The following example uses floated and alignment options:</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui grid&quot;&gt;
+  &lt;div class=&quot;left floated right aligned six wide column&quot;&gt;
+      Left floated right aligned column
+  &lt;/div&gt;
+  &lt;div class=&quot;right floated left aligned six wide column&quot;&gt;
+      Right floated left aligned column
+  &lt;/div&gt;
+  &lt;div class=&quot;two column center aligned row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;
+      Center aligned row
+    &lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;
+      Center aligned row
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sixteen wide column&quot;&gt;
+      Left Aligned Grid
+  &lt;/div&gt;
+  &lt;div class=&quot;sixteen wide right aligned column&quot;&gt;
+        Right Aligned Grid
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg15.html" target = "_ blank">Example</a></p>
+<p>The following example illustrates an example using middle aligned:</p>
+<pre><code>&lt;div class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui center aligned middle aligned grid &quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;
+        &lt;h1&gt;My DIV&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>The <code>grid</code> has a specified height assigned.</p>
+<pre><code>.ui.grid {
+     height: 500px;
+}</code></pre>
+<p><a href="archives/Class Htmls/eg16.html" target = "_ blank">Example</a></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="06">
+              <h1>Responsive Grids</h1>
+<h2>Containers</h2>
+<p>A container can be used alongside a grid to provide a responsive, fixed width container for wrapping the contents of a page.</p>
+<pre><code>&lt;section class = &quot;ui container&quot;&gt;
+&lt;section class=&quot;ui grid&quot;&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column A&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column B&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column C&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column D&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column E&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column F&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column G&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column H&lt;/div&gt;
+&lt;/section&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg17.html" target = "_ blank">Example</a></p>
+<p>Now look at:</p>
+<pre><code>&lt;section class=&quot;ui grid container&quot;&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column A&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column B&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column C&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column D&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column E&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column F&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column G&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;Column H&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg18.html" target = "_ blank">Example</a></p>
+<p>Notice how the second example provides a responsive, fixed width container on all screen sizes.</p>
+<h2>Stackable</h2>
+<p>A stackable grid will automatically stack rows to a single columns on mobile devices.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui stackable four column grid&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;Column A&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;Column B&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;Column C&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;Column D&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg19.html" target = "_ blank">Example</a></p>
+<h2>Reverse Order</h2>
+<p>Semantic includes special <code>reversed</code> variations that allow you to reverse the order of columns or rows by device.</p>
+<p>In the following example, the order is reversed for mobile devices:</p>
+<pre><code>&lt;section class=&quot;ui grid container&quot;&gt;
+&lt;div class=&quot;ui mobile reversed equal width row&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    First
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    Second
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    Third
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg20.html" target = "_ blank">Example</a></p>
+<p>In the following example, the order is reversed for both tablet and mobile devices:</p>
+<pre><code>&lt;section class=&quot;ui grid container&quot;&gt;
+&lt;div class=&quot;ui mobile reversed tablet reversed equal width row&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    First
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    Second
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    Third
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg21.html" target = "_ blank">Example</a></p>
+<h2>Doubling</h2>
+<p>A doubling grid will double column widths for each device jump.</p>
+<pre><code>&lt;div class=&quot;ui center aligned grid container&quot;&gt;
+  &lt;div class=&quot;doubling eight column row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;1&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;3&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;4&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;5&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;6&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;7&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;8&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;doubling six column row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;1&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;3&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;4&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;5&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;6&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;doubling four column row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;1&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;3&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;4&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg22.html" target = "_ blank">Example</a></p>
+<h2>Manual Tweaks</h2>
+<p>Although design patterns like <code>doubling</code> or <code>stackabl</code>e are useful at simplifying responsive styling, you can also manually tweak device 
+presentation by specifying <code>(x) wide device</code> or <code>device only</code> columns or rows.</p>
+<pre><code>&lt;section class=&quot;ui centered stackable grid container&quot;&gt;
+  &lt;div class=&quot;computer only row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;Column 1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;five wide tablet eight wide computer column&quot;&gt;Column A&lt;/div&gt;
+  &lt;div class=&quot;five wide tablet eight wide computer column&quot;&gt;Column B&lt;/div&gt;
+  &lt;div class=&quot;five wide tablet eight wide computer column&quot;&gt;Column C&lt;/div&gt;
+  &lt;div class=&quot;five wide tablet eight wide computer column&quot;&gt;Column D&lt;/div&gt;
+  &lt;div class=&quot;five wide tablet eight wide computer column&quot;&gt;Column E&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg23.html" target = "_ blank">Example</a></p>
+<pre><code>&lt;div class=&quot;ui center aligned grid container&quot;&gt;
+  &lt;div class=&quot;widescreen only row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;Widescreen&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;large screen only row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;Large Screen&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;computer only row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;Computer&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tablet computer only row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;Tablet &amp;amp; Computer&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;two column tablet only row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;Tablet&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;Tablet&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;three column mobile only row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;Mobile&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;Mobile&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;Mobile&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;three wide mobile six wide tablet twelve wide computer column sixteen wide widescreen column&quot;&gt;&lt;p&gt;&lt;span&gt;Different width based on screen size&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p><a href="archives/Class Htmls/eg24.html" target = "_ blank">Example</a></p>
+<p>Now, have a look at our responsive <a href="archives/Class Htmls/fluid/index.html" target = "_ blank">WIT Site</a> styled using Semantic UI.</p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Exercise-1">
+              <h1>Semantic UI Grid - Exercise One</h1>
+<ul>
+<li>Download, extract and open the <a href="archives/lab01.zip">Lab01</a> folder in Week09.</li>
+<li>A web page has been created for you, add Semantic UI code that will lay out the web page as follows:</li>
+</ul>
+<p><img src="img/ex1.png" alt=""></p>
+<p>You will notice that when you resize the browser to small viewport size, the 4 columns of text appear
+very narrow.</p>
+<ul>
+<li>Adjust the code for the 4 columns such that the columns of text are size 8 on very small viewports (mobile), and size 4 on all other devices.</li>
+</ul>
+<p><img src="img/ex2.png" alt=""></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Exercise-2">
+              <h1>Semantic UI Grid - Exercise Two</h1>
+<ul>
+<li>Download, extract and open the <a href="archives/lab02.zip">Lab02</a> folder in Week09.</li>
+<li>A web page has been created for you. Add the necessary tags to render index.html as follows:</li>
+</ul>
+<p><img src="img/ordered.png" alt=""></p>
+<p>Now, adjust the necessary tags to render index.html as follows when the screen viewport is at mobile viewport:</p>
+<p><img src="img/orders2.png" alt=""></p>
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass('');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertAfter($images[i]);
+      $('<br>').insertAfter($images[i]);
+    }
+  });
+});
+
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+</html>

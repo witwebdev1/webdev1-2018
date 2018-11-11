@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
+
+body {
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
+}
+
+p {
+  margin: 0.5em;
+}
+
+pre code {
+  font-family: "Monaco";
+  font-size: 100%;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
+}
+
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-style:italic;
+  font-size:130%;
+}
+
+h2 {
+  font-size:110%;
+}
+
+h3 {
+  font-size:100%;
+}
+
+
+
+    </style>
+  </head>
+
+  <body>
+    
+    
+
+    <div class="ui fixed top pointing inverted stackable menu labmenu">
+      <header class="header item">
+        <i id="toc" class="sitemap icon"></i>
+        
+          <a href="../index.html">  Semantic UI-1  </a>
+        
+      </header>
+      <div class="right tab-menu menu">
+        
+          <a class="item" data-tab="Semantic UI Elements">
+            Semantic UI Elements
+          </a>
+        
+          <a class="item" data-tab="01">
+            01
+          </a>
+        
+          <a class="item" data-tab="02">
+            02
+          </a>
+        
+          <a class="item" data-tab="03">
+            03
+          </a>
+        
+          <a class="item" data-tab="04">
+            04
+          </a>
+        
+          <a class="item" data-tab="Exercise-1">
+            Exercise-1
+          </a>
+        
+      </div>
+    </div>
+
+    <div class="ui segment pushable">
+      <div class="ui inverted labeled icon left inline vertical sidebar menu">
+        <br><br>
+        
+          
+            <a class="item" href="../../topic-00-Assignments/book-00-Assignment-01/index.html">
+              Assignment One
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-00-Assignments/book-00-Assignment-02/index.html">
+              Assignment Two
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-00-first-html-page/index.html">
+              Create your first HTML page
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-01-formatting-text/index.html">
+              Formatting text
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-02-adding-image/index.html">
+              Adding an image
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-03-adding-lists/index.html">
+              Adding lists
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-04-linking-pages/index.html">
+              Linking pages
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-HTML/book-05-validating-html/index.html">
+              Validating HTML
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-00-CSS-Introduction/index.html">
+              CSS Introduction
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-01-Adding-Style/index.html">
+              Adding Style
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-02-Adding-Colour/index.html">
+              Adding Colour
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-03-Controlling-the-Font/index.html">
+              Controlling the Font
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-04-Text-Properties/index.html">
+              Text Properties
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-05-Styling-Links/index.html">
+              Styling Links
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-CSS-1/book-06-Grouping-Styles/index.html">
+              Grouping Styles
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-00-Class-and-Id-Selectors/index.html">
+              Id and Class Selectors
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-01-Descendant-Selectors/index.html">
+              Descendant Selectors
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-02-Styling-Lists/index.html">
+              Styling Lists
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-CSS-2/book-03-CSS-Exercises/index.html">
+              CSS Part Two Lab
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-00-Table-Introduction/index.html">
+              Table Introduction
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-01-Styling-Tables/index.html">
+              Table Styling
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-02-Advanced-Tables/index.html">
+              Advanced Tables
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-03-Using-nth-of-type/index.html">
+              Using nth-of-type
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-Tables/book-04-Table-Exercises/index.html">
+              HTML Tables Lab
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-05-Deployment/book-00-Set-up-000webhost/index.html">
+              Set up 000 web host
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-05-Deployment/book-01-Set-up-5gbfree/index.html">
+              Set up 5gbfree
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-Layout-1/book-00-The-Box-Model/index.html">
+              The Box Model
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-Layout-1/book-01-Layout-Positioning/index.html">
+              Layout and Positioning
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-Layout-1/book-02-Background-Images/index.html">
+              Background Images
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-Layout-2/book-00-Semantic-Layout/index.html">
+              Semantic Layout
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-Layout-2/book-01-Figures-and-captions/index.html">
+              Figures and captions
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-Layout-2/book-02-Navigation/index.html">
+              Navigation
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-09-semantic-ui-1/book-00-Semantic-Grid/index.html">
+              Semantic UI Grid
+            </a>
+          
+        
+          
+            <a class="active item" href="../../topic-09-semantic-ui-1/book-02-Semantic-Elements/index.html">
+              Semantic UI Elements
+            </a>
+          
+        
+      </div>
+      <div class="pusher" tabindex="-1">
+        <div class="ui basic segment" id="labchat">
+          <br>
+          
+            <div  class="ui tab segment lab" data-tab="Semantic UI Elements">
+              <h1>Objective</h1>
+<p>This lab looks at some Semantic UI elements.</p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="01">
+              <h1>Segments</h1>
+<p>A segment is used to create a grouping of related content. A segment has the properties of <code>box-shadow</code>, <code>border-radius</code> and <code>border</code> that make it look elevated.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui  three column grid segment&quot;&gt;
+&lt;div class=&quot;ui column&quot;&gt;
+             &lt;h2&gt;Frontend&lt;/h2&gt;
+             &lt;p&gt;
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui column&quot;&gt;
+            &lt;h2&gt;Serverside&lt;/h2&gt;
+             &lt;p&gt;
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui column&quot;&gt;
+             &lt;h2&gt;Databases&lt;/h2&gt;
+             &lt;p&gt;
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui column&quot;&gt;
+             &lt;h2&gt;Frontend&lt;/h2&gt;
+             &lt;p&gt;
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui column&quot;&gt;
+            &lt;h2&gt;Serverside&lt;/h2&gt;
+             &lt;p&gt;
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+             &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui column&quot;&gt;
+
+             &lt;h2&gt;Databases&lt;/h2&gt;
+             &lt;p&gt;
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<pre><code> &lt;section class=&quot;ui container&quot;&gt;
+ &lt;div class=&quot;ui  three column grid segment&quot;&gt;
+   &lt;div class=&quot;ui column&quot;&gt;
+              &lt;h2&gt;Frontend&lt;/h2&gt;
+              &lt;p&gt;
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              &lt;/p&gt;
+   &lt;/div&gt;
+  ...
+  &lt;/div&gt;
+ &lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/example1.html" target="_blank">Example</a></p>
+<h2>Stacked Segment</h2>
+<p>A segment can be formatted to show it contains multiple pages.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui  three column stacked grid segment&quot;&gt;
+  ...
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/example2.html" target="_blank">Example</a></p>
+<h2>Piled Segment</h2>
+<p>Or, a segment can be formatted to look like a pile of pages.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui  three column piled grid segment&quot;&gt;
+  ...
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/example3.html" target="_blank">Example</a></p>
+<h2>Raised Segment</h2>
+<p>Or, a segment may be formatted to raise above the page.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui  three column raised grid segment&quot;&gt;
+  ...
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/example4.html" target="_blank">Example</a></p>
+<p>More information about segments may be found at <a href ="https://semantic-ui.com/elements/segment.html" target = "_blank">Semantic UI Segment</a></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="02">
+              <h1>Images</h1>
+<p>We can add an <code>ui image</code> class to an &lt;img&gt; tag. </p>
+<p>You can specify the size for the image by added the particular <em>size</em> class, choices are:</p>
+<ul>
+<li>mini</li>
+<li>tiny</li>
+<li>small</li>
+<li>medium</li>
+<li>large</li>
+<li>big</li>
+<li>huge</li>
+<li>massive</li>
+</ul>
+<p>You can have the image appear <code>rounded</code> or <code>circular</code> also  by adding the respective classes.</p>
+<p>If you include some text with the image, then you can specify its vertical alignment, choices are:</p>
+<ul>
+<li>top aligned</li>
+<li>middle aligned</li>
+<li>bottom aligned</li>
+</ul>
+<p>An image may also be formatted to appear inline with text as an avatar by adding the <code>avatar</code> class. </p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+&lt;div class=&quot;ui equal width center aligned grid&quot;&gt;
+&lt;div class = &quot;column&quot;&gt;
+ &lt;img src=&quot;images/bird1.jpg&quot; class=&quot;ui middle aligned image&quot; alt=&quot;Sample image&quot;&gt;
+ &lt;span&gt;Image&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class = &quot;column&quot;&gt;
+  &lt;img src=&quot;images/bird1.jpg&quot; class=&quot;ui middle aligned mini image&quot; alt=&quot;Sample image&quot;&gt;
+  &lt;span&gt;Tiny&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class = &quot;column&quot;&gt;
+  &lt;img src=&quot;images/bird1.jpg&quot; class=&quot;ui middle aligned tiny image&quot; alt=&quot;Sample image&quot;&gt;
+  &lt;span&gt;Small&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class = &quot;column&quot;&gt;
+ &lt;img src=&quot;images/bird2.jpg&quot; img class=&quot;ui middle aligned rounded image&quot; alt=&quot;Sample image&quot;&gt;
+ &lt;span&gt;Rounded&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class = &quot;column&quot;&gt;
+ &lt;img src=&quot;images/bird2.jpg&quot; class=&quot;ui middle aligned circular image&quot; alt=&quot;Sample image&quot;&gt;
+ &lt;span&gt;Circular&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class = &quot;column&quot;&gt;
+&lt;img src=&quot;images/bird2.jpg&quot; class=&quot;ui avatar image&quot; alt=&quot;Sample image&quot;&gt;
+&lt;span&gt;Avatar&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/example5.html" target="_blank">Example</a></p>
+<h2>Responsive Images</h2>
+<p>By added the <code>fluid</code> class, the image will take up the width of its container on any size viewport.</p>
+<pre><code>&lt;section class=&quot;ui container&quot;&gt;
+    &lt;h3&gt;Resize your browser to see the image scale as the viewport becomes smaller.&lt;/h3&gt;
+    &lt;img src=&quot;images/island.jpg&quot; class=&quot;ui fluid image&quot; alt=&quot;Sample photo&quot;&gt;
+&lt;/section&gt;</code></pre>
+<p><a href="archives/Class Htmls/example6.html" target="_blank">Example</a></p>
+<p>More information about images may be found at <a href ="https://semantic-ui.com/elements/image.html" target = "_blank">Semantic UI Image</a></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="03">
+              <h1>Buttons</h1>
+<p>We can add an <code>ui button</code> class to an &lt;button&gt; tag. This gives you a standard button like follows:</p>
+<pre><code>&lt;button class=&quot;ui button&quot;&gt;
+   Button
+&lt;/button&gt;</code></pre>
+<p><img src="img/button1.PNG" alt="">.</p>
+<p>You can specify a less prounouced button by adding the <code>basic</code> class as follows:</p>
+<pre><code>&lt;button class=&quot;ui basic button&quot;&gt;
+   Basic
+&lt;/button&gt;</code></pre>
+<p><img src="img/button2.PNG" alt="">.</p>
+<p>Again, you can specify the size for the button by added the particular <em>size</em> class, choices are:</p>
+<ul>
+<li>mini</li>
+<li>tiny</li>
+<li>small</li>
+<li>medium</li>
+<li>large</li>
+<li>big</li>
+<li>huge</li>
+<li>massive</li>
+</ul>
+<p>You can specify the type of button, choices are:</p>
+<ul>
+<li>primary</li>
+<li>secondary</li>
+<li>positive</li>
+<li>negative</li>
+</ul>
+<p>And, you can specify a colour for the button by adding a <em>colour</em> class.</p>
+<pre><code> &lt;div class = &quot;ui container&quot;&gt;
+ &lt;section class=&quot;ui segment&quot;&gt;
+ &lt;button class=&quot;ui button&quot;&gt;
+   Button
+ &lt;/button&gt;
+ &lt;button class=&quot;ui basic button&quot;&gt;
+   Basic
+ &lt;/button&gt;
+ &lt;button class=&quot;ui primary button&quot;&gt;
+   Primary
+ &lt;/button&gt;
+ &lt;button class=&quot;ui secondary button&quot;&gt;
+   Secondary
+ &lt;/button&gt;
+ &lt;button class=&quot;ui positive button&quot;&gt;
+   Positive
+ &lt;/button&gt;
+ &lt;button class=&quot;ui negative button&quot;&gt;
+   Negative
+ &lt;/button&gt;
+ &lt;button class=&quot;ui teal button&quot;&gt;
+   Teal
+ &lt;/button&gt;
+ &lt;button class=&quot;ui orange button&quot;&gt;
+   Orange
+ &lt;/button&gt;
+ &lt;button class=&quot;ui purple button&quot;&gt;
+   Purple
+ &lt;/button&gt;
+ &lt;/section&gt;
+
+ &lt;section class=&quot;ui segment&quot;&gt;
+ &lt;button class=&quot;ui mini button&quot;&gt;
+   Mini
+ &lt;/button&gt;
+ &lt;button class=&quot;ui tiny button&quot;&gt;
+   Tiny
+ &lt;/button&gt;
+ &lt;button class=&quot;ui small button&quot;&gt;
+   Small
+ &lt;/button&gt;
+ &lt;button class=&quot;ui medium button&quot;&gt;
+   Medium
+ &lt;/button&gt;
+ &lt;button class=&quot;ui large button&quot;&gt;
+   Large
+ &lt;/button&gt;
+ &lt;button class=&quot;ui big button&quot;&gt;
+   Big
+ &lt;/button&gt;
+ &lt;button class=&quot;ui huge button&quot;&gt;
+   Huge
+ &lt;/button&gt;
+ &lt;button class=&quot;ui massive button&quot;&gt;
+   Massive
+ &lt;/button&gt;
+ &lt;/section&gt;
+ &lt;/div&gt;</code></pre>
+<p><a href="archives/Class Htmls/example7.html" target="_blank">Example</a></p>
+<h2>Inverted</h2>
+<p>A button can be formatted to appear on dark backgrounds.</p>
+<pre><code>&lt;div class = &quot;ui container&quot;&gt;
+&lt;section class=&quot;ui inverted segment&quot;&gt;
+  &lt;button class=&quot;ui inverted button&quot;&gt;Standard&lt;/button&gt;
+  &lt;button class=&quot;ui inverted primary button&quot;&gt;Primary&lt;/button&gt;
+  &lt;button class=&quot;ui inverted secondary button&quot;&gt;Secondary&lt;/button&gt;
+  &lt;button class=&quot;ui inverted teal button&quot;&gt;Teal&lt;/button&gt;
+  &lt;button class=&quot;ui inverted orange button&quot;&gt;Orange&lt;/button&gt;
+  &lt;button class=&quot;ui inverted purple button&quot;&gt;Purple&lt;/button&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;ui inverted segment&quot;&gt;
+  &lt;button class=&quot;ui button&quot;&gt;Standard&lt;/button&gt;
+  &lt;button class=&quot;ui primary button&quot;&gt;Primary&lt;/button&gt;
+  &lt;button class=&quot;ui secondary button&quot;&gt;Secondary&lt;/button&gt;
+  &lt;button class=&quot;ui teal button&quot;&gt;Teal&lt;/button&gt;
+  &lt;button class=&quot;ui orange button&quot;&gt;Orange&lt;/button&gt;
+  &lt;button class=&quot;ui purple button&quot;&gt;Purple&lt;/button&gt;
+  &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+<p><a href="archives/Class Htmls/example8.html" target="_blank">Example</a></p>
+<p>More information about images may be found at <a href ="https://semantic-ui.com/elements/button.html" target = "_blank">Semantic UI Button</a></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="04">
+              <h1>Icons</h1>
+<p>To insert an icon, add the name of the icon class to any inline HTML element. The &lt;i&gt; and &lt;span&gt; elements are widely used to add icons. </p>
+<p>In Semantic UI, icons receive a special tag &lt;i&gt;, which allows for an abbreviated markup when sitting along-side text.</p>
+<p>For example:</p>
+<pre><code>   &lt;i class=&quot;download large icon&quot;&gt;&lt;/i&gt;</code></pre>
+<p><img src="img/icon.PNG" alt=""></p>
+<p>Again, you can specify a <em>size</em> and/or add a <code>circular</code> or <code>inverted</code> or <em>colour</em> class.</p>
+<pre><code>&lt;div class = &quot;ui container&quot;&gt;
+ &lt;section class=&quot;ui center aligned segment&quot;&gt;
+   &lt;i class=&quot;desktop large icon&quot;&gt;&lt;/i&gt;
+   &lt;i class=&quot;download large icon&quot;&gt;&lt;/i&gt;
+   &lt;i class=&quot;headphones large icon&quot;&gt;&lt;/i&gt;
+   &lt;i class=&quot;power off large icon&quot;&gt;&lt;/i&gt;
+   &lt;i class=&quot;print large icon&quot;&gt;&lt;/i&gt;
+   &lt;i class=&quot;save outline large icon&quot;&gt;&lt;/i&gt;
+   &lt;i class=&quot;upload large icon&quot;&gt;&lt;/i&gt;
+   &lt;i class=&quot;folder open large icon&quot;&gt;&lt;/i&gt;
+   &lt;i class=&quot;cut large icon&quot;&gt;&lt;/i&gt;
+   &lt;i class=&quot;paste large icon&quot;&gt;&lt;/i&gt;
+   &lt;i class=&quot;thumbs up large icon&quot;&gt;&lt;/i&gt;
+ &lt;/section&gt;
+
+  &lt;section class=&quot;ui center aligned segment&quot;&gt;
+    &lt;i class=&quot;facebook big icon&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;twitter big icon&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;linkedin big icon&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;github big icon&quot;&gt;&lt;/i&gt;
+ &lt;/section&gt;
+
+   &lt;section class=&quot;ui center aligned segment&quot;&gt;
+     &lt;i class=&quot;twitter mini icon&quot;&gt;&lt;/i&gt;
+     &lt;i class=&quot;twitter tiny icon&quot;&gt;&lt;/i&gt;
+     &lt;i class=&quot;twitter small icon&quot;&gt;&lt;/i&gt;
+     &lt;i class=&quot;twitter medium icon&quot;&gt;&lt;/i&gt;
+     &lt;i class=&quot;twitter large icon&quot;&gt;&lt;/i&gt;
+     &lt;i class=&quot;twitter big icon&quot;&gt;&lt;/i&gt;
+     &lt;i class=&quot;twitter huge icon&quot;&gt;&lt;/i&gt;
+     &lt;i class=&quot;twitter massive icon&quot;&gt;&lt;/i&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;ui center aligned segment&quot;&gt;
+    &lt;i class=&quot;circular users icon&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;circular teal users icon&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;circular inverted users icon&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;circular inverted teal users icon&quot;&gt;&lt;/i&gt;
+  &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+<p><a href="archives/Class Htmls/example9.html" target="_blank">Example</a></p>
+<h1>Buttons with Icons</h1>
+<p>A button can have only an icon, by adding the class <code>icon</code> to the <code>button</code> class,  for example:</p>
+<pre><code>  &lt;button class=&quot;ui icon button&quot;&gt;&lt;i class=&quot;cloud icon&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+<p><img src="img/cloud.PNG" alt=""></p>
+<p>A button can also be formatted to link to a social website, by adding the <em>social website</em> to the <code>button</code> class,  for example:</p>
+<pre><code>  &lt;button class=&quot;ui facebook button&quot;&gt;&lt;i class=&quot;facebook icon&quot;&gt;&lt;/i&gt;Facebook&lt;/button&gt;</code></pre>
+<p><img src="img/facebook.PNG" alt=""></p>
+<pre><code>&lt;div class = &quot;ui container&quot;&gt;
+ &lt;section class=&quot;ui center aligned segment&quot;&gt;
+  &lt;button class=&quot;ui icon button&quot;&gt;&lt;i class=&quot;cloud icon&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;ui icon button&quot;&gt;&lt;i class=&quot;bold icon&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;ui icon button&quot;&gt;&lt;i class=&quot;underline icon&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+ &lt;/section&gt;
+
+ &lt;section class=&quot;ui center aligned segment&quot;&gt;
+  &lt;button class=&quot;ui facebook button&quot;&gt;&lt;i class=&quot;facebook icon&quot;&gt;&lt;/i&gt;Facebook&lt;/button&gt;
+  &lt;button class=&quot;ui twitter button&quot;&gt;&lt;i class=&quot;twitter icon&quot;&gt;&lt;/i&gt;Twitter&lt;/button&gt;
+  &lt;button class=&quot;ui linkedin button&quot;&gt;&lt;i class=&quot;linkedin icon&quot;&gt;&lt;/i&gt;LinkedIn&lt;/button&gt;
+  &lt;button class=&quot;ui github button&quot;&gt;&lt;i class=&quot;github icon&quot;&gt;&lt;/i&gt;Github&lt;/button&gt;
+  &lt;button class=&quot;ui youtube button&quot;&gt;&lt;i class=&quot;youtube icon&quot;&gt;&lt;/i&gt;YouTube&lt;/button&gt;
+ &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+<p><a href="archives/Class Htmls/example10.html" target="_blank">Example</a></p>
+<p>More information about images may be found at <a href ="https://semantic-ui.com/elements/icon.html" target = "_blank">Semantic UI Icon</a></p>
+
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Exercise-1">
+              <h1>Semantic UI Elements - Exercise</h1>
+<ul>
+<li>Download, extract and open the <a href="archives/lab03.zip">Lab03</a> folder in Week09.</li>
+<li>A web page has been created for you, add 3 images from the images folder (feat1.jpg, feat2.jpg, and feat3.jpg), which are responsive and displayed as a circle.</li>
+<li>Add Semantic UI code that will display the output as follows on all viewports except on mobile devices, where it will be stackable:</li>
+</ul>
+<p><img src="img/ex.png" alt=""></p>
+<ul>
+<li>The <code>header</code> and <code>section</code> are enclosed in segments, which are center aligned.</li>
+<li>Add 3 buttons as shown with the <code>hand pointer icon</code> included.</li>
+</ul>
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass('');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertAfter($images[i]);
+      $('<br>').insertAfter($images[i]);
+    }
+  });
+});
+
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+</html>
