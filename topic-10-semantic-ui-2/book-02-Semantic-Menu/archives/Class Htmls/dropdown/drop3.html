@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css">
+    <title>Semantic UI Dropdown</title>
+    <style>
+      .ui.container {
+	    margin-top:3%;
+      }
+
+      .ui.selection.dropdown .menu > .item {
+        border-top: none;
+      }
+    </style>
+</head>
+<body>
+
+<div class = "ui container">
+<div class="ui selection dropdown">
+  <input type="hidden" name="user">
+  <i class="dropdown icon"></i>
+  <div class="default text">Select Friend</div>
+  <div class="menu">
+    <div class="item" data-value="jenny">
+      <img class="ui mini avatar image" src="images/jenny.jpg">
+      Jenny Hess
+    </div>
+    <div class="item" data-value="elliot">
+      <img class="ui mini avatar image" src="images/elliot.jpg">
+      Elliot Fu
+    </div>
+    <div class="item" data-value="stevie">
+      <img class="ui mini avatar image" src="images/stevie.jpg">
+      Stevie Feliciano
+    </div>
+    <div class="item" data-value="christian">
+      <img class="ui mini avatar image" src="images/christian.jpg">
+      Christian
+    </div>
+    <div class="item" data-value="matt">
+      <img class="ui mini avatar image" src="images/matt.jpg">
+      Matt
+    </div>
+    <div class="item" data-value="justen">
+      <img class="ui mini avatar image" src="images/justen.jpg">
+      Justen Kitsune
+    </div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script>
+ $('.ui.dropdown').dropdown();
+</script>
+
+</body>
+</html>
+

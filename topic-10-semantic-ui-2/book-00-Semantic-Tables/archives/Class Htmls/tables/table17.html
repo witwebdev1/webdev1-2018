@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css">
+    <title>Semantic UI Table</title>
+    <style>
+      .ui.container {
+         margin-top:3%;
+      }
+    </style>
+</head>
+<body>
+
+<div class = "ui container">
+	<table class= "ui celled sortable  table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Band</th>
+				<th>Date of Birth</th>
+				<th class="number">Age</th>
+				<th class="no-sort">Photo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Thom Yorke</td>
+				<td>Radiohead</td>
+				<td data-sort-value="2">October 7, 1968</td>
+				<td>43</td>
+				<td><img src="http://place-hoff.com/100/100" width="50"></td>
+			</tr>
+						<tr>
+							<td>Justin Vernon</td>
+							<td>Bon Iver</td>
+							<td data-sort-value="4">April 30, 1981</td>
+							<td>30</td>
+							<td><img src="http://www.fillmurray.com/100/100" width="50"></td>
+			</tr>
+
+			<tr>
+				<td>Paul McCartney</td>
+				<td>The Beatles</td>
+				<td data-sort-value="1">June 18, 1942</td>
+				<td>69</td>
+				<td><img src="https://www.placecage.com/100/100" width="50"></td>
+			</tr>
+			<tr>
+				<td>Sam Beam</td>
+				<td>Iron &amp; Wine</td>
+				<td data-sort-value="3">July 26, 1974</td>
+				<td>37</td>
+				<td><img src="http://www.stevensegallery.com/200/200" width="50"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script type="text/javascript" src="https://semantic-ui.com/javascript/library/tablesort.js"></script>
+<script>
+  $('table').tablesort();
+</script>
+</body>
+</html>
+
