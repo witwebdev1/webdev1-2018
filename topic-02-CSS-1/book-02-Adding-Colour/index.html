@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <style>
-      
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css"
+        rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <style>
+    
 
 body {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
@@ -57,278 +66,241 @@ h3 {
 
 
 
-    </style>
-  </head>
+  </style>
+</head>
 
-  <body>
+<body>
+
+
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
     
+      <a href="../index.html">  CSS Part One  </a>
     
+  </header>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="Adding Colour">
+        Adding Colour
+      </a>
+    
+      <a class="item" data-tab="01">
+        01
+      </a>
+    
+      <a class="item" data-tab="02">
+        02
+      </a>
+    
+      <a class="item" data-tab="03">
+        03
+      </a>
+    
+      <a class="item" data-tab="04">
+        04
+      </a>
+    
+  </div>
+</div>
 
-    <div class="ui fixed top pointing inverted stackable menu labmenu">
-      <header class="header item">
-        <i id="toc" class="sitemap icon"></i>
-        
-          <a href="../index.html">  CSS Part One  </a>
-        
-      </header>
-      <div class="right tab-menu menu">
-        
-          <a class="item" data-tab="Adding Colour">
-            Adding Colour
-          </a>
-        
-          <a class="item" data-tab="01">
-            01
-          </a>
-        
-          <a class="item" data-tab="02">
-            02
-          </a>
-        
-          <a class="item" data-tab="03">
-            03
-          </a>
-        
-          <a class="item" data-tab="04">
-            04
-          </a>
-        
-      </div>
-    </div>
-
-    <div class="ui segment pushable">
-      <div class="ui inverted labeled icon left inline vertical sidebar menu">
-        <br><br>
-        
-          
-            <a class="item" href="../../topic-00-Assignments/book-00-Assignment-01/index.html">
-              Assignment One
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-00-Assignments/book-00-Assignment-02/index.html">
-              Assignment Two
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-00-first-html-page/index.html">
-              Create your first HTML page
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-01-formatting-text/index.html">
-              Formatting text
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-02-adding-image/index.html">
-              Adding an image
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-03-adding-lists/index.html">
-              Adding lists
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-04-linking-pages/index.html">
-              Linking pages
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-05-validating-html/index.html">
-              Validating HTML
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-00-CSS-Introduction/index.html">
-              CSS Introduction
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-01-Adding-Style/index.html">
-              Adding Style
-            </a>
-          
-        
-          
-            <a class="active item" href="../../topic-02-CSS-1/book-02-Adding-Colour/index.html">
-              Adding Colour
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-03-Controlling-the-Font/index.html">
-              Controlling the Font
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-04-Text-Properties/index.html">
-              Text Properties
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-05-Styling-Links/index.html">
-              Styling Links
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-06-Grouping-Styles/index.html">
-              Grouping Styles
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-03-CSS-2/book-00-Class-and-Id-Selectors/index.html">
-              Id and Class Selectors
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-03-CSS-2/book-01-Descendant-Selectors/index.html">
-              Descendant Selectors
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-03-CSS-2/book-02-Styling-Lists/index.html">
-              Styling Lists
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-03-CSS-2/book-03-CSS-Exercises/index.html">
-              CSS Part Two Lab
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-04-Tables/book-00-Table-Introduction/index.html">
-              Table Introduction
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-04-Tables/book-01-Styling-Tables/index.html">
-              Table Styling
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-04-Tables/book-02-Advanced-Tables/index.html">
-              Advanced Tables
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-04-Tables/book-03-Using-nth-of-type/index.html">
-              Using nth-of-type
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-04-Tables/book-04-Table-Exercises/index.html">
-              HTML Tables Lab
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-05-Deployment/book-00-Set-up-000webhost/index.html">
-              Set up 000 web host
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-05-Deployment/book-01-Set-up-5gbfree/index.html">
-              Set up 5gbfree
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-07-Layout-1/book-00-The-Box-Model/index.html">
-              The Box Model
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-07-Layout-1/book-01-Layout-Positioning/index.html">
-              Layout and Positioning
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-07-Layout-1/book-02-Background-Images/index.html">
-              Background Images
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-08-Layout-2/book-00-Semantic-Layout/index.html">
-              Semantic Layout
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-08-Layout-2/book-01-Figures-and-captions/index.html">
-              Figures and captions
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-08-Layout-2/book-02-Navigation/index.html">
-              Navigation
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-09-semantic-ui-1/book-00-Semantic-Grid/index.html">
-              Semantic UI Grid
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-09-semantic-ui-1/book-02-Semantic-Elements/index.html">
-              Semantic UI Elements
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-10-semantic-ui-2/book-00-Semantic-Tables/index.html">
-              Semantic UI Tables
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-10-semantic-ui-2/book-02-Semantic-Menu/index.html">
-              Semantic UI Menu
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-10-semantic-ui-2/book-03-Semantic-Cards/index.html">
-              Semantic UI Cards
-            </a>
-          
-        
-      </div>
-      <div class="pusher" tabindex="-1">
-        <div class="ui basic segment" id="labchat">
-          <br>
-          
-            <div  class="ui tab segment lab" data-tab="Adding Colour">
-              <h1>Objectives</h1>
+<div class="ui pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-00-Assignments/book-00-Assignment-01/index.html">Assignment One </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-00-Assignments/book-00-Assignment-02/index.html">Assignment Two </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-00-first-html-page/index.html">Create your first HTML page </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-01-formatting-text/index.html">Formatting text </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-02-adding-image/index.html">Adding an image </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-03-adding-lists/index.html">Adding lists </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-04-linking-pages/index.html">Linking pages </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-05-validating-html/index.html">Validating HTML </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-00-CSS-Introduction/index.html">CSS Introduction </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-01-Adding-Style/index.html">Adding Style </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-02-Adding-Colour/index.html">Adding Colour </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-03-Controlling-the-Font/index.html">Controlling the Font </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-04-Text-Properties/index.html">Text Properties </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-05-Styling-Links/index.html">Styling Links </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-06-Grouping-Styles/index.html">Grouping Styles </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-00-Class-and-Id-Selectors/index.html">Id and Class Selectors </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-01-Descendant-Selectors/index.html">Descendant Selectors </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-02-Styling-Lists/index.html">Styling Lists </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-03-CSS-Exercises/index.html">CSS Part Two Lab </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-00-Table-Introduction/index.html">Table Introduction </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-01-Styling-Tables/index.html">Table Styling </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-02-Advanced-Tables/index.html">Advanced Tables </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-03-Using-nth-of-type/index.html">Using nth-of-type </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-04-Table-Exercises/index.html">HTML Tables Lab </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-05-Deployment/book-00-Set-up-000webhost/index.html">Set up 000 web host </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-05-Deployment/book-01-Set-up-5gbfree/index.html">Set up 5gbfree </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-07-Layout-1/book-00-The-Box-Model/index.html">The Box Model </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-07-Layout-1/book-01-Layout-Positioning/index.html">Layout and Positioning </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-07-Layout-1/book-02-Background-Images/index.html">Background Images </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-08-Layout-2/book-00-Semantic-Layout/index.html">Semantic Layout </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-08-Layout-2/book-01-Figures-and-captions/index.html">Figures and captions </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-08-Layout-2/book-02-Navigation/index.html">Navigation </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-09-semantic-ui-1/book-00-Semantic-Grid/index.html">Semantic UI Grid </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-09-semantic-ui-1/book-02-Semantic-Elements/index.html">Semantic UI Elements </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-10-semantic-ui-2/book-00-Semantic-Tables/index.html">Semantic UI Tables </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-10-semantic-ui-2/book-02-Semantic-Menu/index.html">Semantic UI Menu </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-10-semantic-ui-2/book-03-Semantic-Cards/index.html">Semantic UI Cards </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+        <div class="ui tab segment lab" data-tab="Adding Colour">
+          <h1>Objectives</h1>
 <p>This lab will introduce you to the methods of adding colour.</p>
 <p>Colors in CSS are most often specified by:</p>
 <ul>
@@ -338,17 +310,17 @@ h3 {
 </ul>
 <p>This lab also provides you with a <a href="#/04">Worked Example</a>.</p>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="01">
-              <h1>Colour Name</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="01">
+          <h1>Colour Name</h1>
 <p>Colours set by using color names. Colour names are not case-sensitive: &quot;Red&quot; is the same as &quot;red&quot; or &quot;RED&quot;.</p>
 <p>CSS3 adds support for a set of 140 <a href = "http://www.learningwebdesign.com/colornames.html" target="_blank">Color Names</a>.</p>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="02">
-              <h1>RGB Value</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="02">
+          <h1>RGB Value</h1>
 <p>RGB colour values can be specified using this formula: rgb(red, green, blue).</p>
 <p>Each parameter (red, green, blue) defines the intensity of the colour between 0 and 255.</p>
 <p>For example, rgb(255,0,0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.</p>
@@ -362,10 +334,10 @@ h3 {
 <li>rgb(255, 255, 255) is white.</li>
 </ul>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="03">
-              <h1>Hex Value</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="03">
+          <h1>Hex Value</h1>
 <p>RGB values can also be specified using hexadecimal colour values in the form: #RRGGBB, where RR (red), GG (green) and BB (blue) 
 are hexadecimal values between 00 and FF (same as decimal 0-255). <strong>Hexadecimal</strong> is a <strong>base-16</strong> number system. We are generally used to the <strong>decimal</strong> number system (<strong>base-10</strong>, from 0 to 9), but hexadecimal has 16 digits, 
 from 0 to F. </p>
@@ -383,10 +355,10 @@ Colours can be set using RGB colour codes (hex or decimal) or by using the colou
 </ul>
 <p><strong>Note:</strong> HEX values are case-insensitive: &quot;#ff0000&quot; is the same as &quot;FF0000&quot;.</p>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="04">
-              <h1>Worked Example</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="04">
+          <h1>Worked Example</h1>
 <p>Before we proceed, we will add some style to an existing <a href="archives/Class Htmls/class1.htm" target = "_blank">web page</a>.</p>
 <p>We will add a style element for the body such that the text is blue and the background colour is lightyellow.</p>
 <pre><code>body {
@@ -398,28 +370,34 @@ Colours can be set using RGB colour codes (hex or decimal) or by using the colou
 <p>For more colour details see <a href = "http://web.njit.edu/~kevin/rgb.txt.html" target="_blank">RGB to Color Name Mapping (Triplet and Hex)</a>.</p>
 <p>Another good site is <a href = "http://www.generateit.net/color-schemes/index.php" target="_blank">Color Scheme Generator</a> where you can change the colour values.</p></p>
 
-            </div>
-          
         </div>
-      </div>
+      
     </div>
+  </div>
+</div>
 
-    <script>
-      $(document).ready(function() {
-  const $images = $('.lab img');
-  jQuery.each($images, function(i) {
-    if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
-      $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
-      divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
-    }
-  });
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
 });
 
-      $(document).ready(function() {
+  $(document).ready(function() {
   $('img').addClass('ui image');
 
   $('.ui.embed').embed();
@@ -452,6 +430,6 @@ Colours can be set using RGB colour codes (hex or decimal) or by using the colou
     .sidebar('attach events', '#toc');
 });
 
-    </script>
-  </body>
+</script>
+</body>
 </html>

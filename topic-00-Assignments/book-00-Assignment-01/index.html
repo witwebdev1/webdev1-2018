@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <style>
-      
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css"
+        rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <style>
+    
 
 body {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
@@ -57,274 +66,237 @@ h3 {
 
 
 
-    </style>
-  </head>
+  </style>
+</head>
 
-  <body>
+<body>
+
+
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
     
+      <a href="../index.html">  Assignments  </a>
     
+  </header>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="Assignment One">
+        Assignment One
+      </a>
+    
+      <a class="item" data-tab="Details">
+        Details
+      </a>
+    
+      <a class="item" data-tab="Submitting your assignment">
+        Submitting your assignment
+      </a>
+    
+      <a class="item" data-tab="Marking Scheme">
+        Marking Scheme
+      </a>
+    
+  </div>
+</div>
 
-    <div class="ui fixed top pointing inverted stackable menu labmenu">
-      <header class="header item">
-        <i id="toc" class="sitemap icon"></i>
-        
-          <a href="../index.html">  Assignments  </a>
-        
-      </header>
-      <div class="right tab-menu menu">
-        
-          <a class="item" data-tab="Assignment One">
-            Assignment One
-          </a>
-        
-          <a class="item" data-tab="Details">
-            Details
-          </a>
-        
-          <a class="item" data-tab="Submitting your assignment">
-            Submitting your assignment
-          </a>
-        
-          <a class="item" data-tab="Marking Scheme">
-            Marking Scheme
-          </a>
-        
-      </div>
-    </div>
-
-    <div class="ui segment pushable">
-      <div class="ui inverted labeled icon left inline vertical sidebar menu">
-        <br><br>
-        
-          
-            <a class="active item" href="../../topic-00-Assignments/book-00-Assignment-01/index.html">
-              Assignment One
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-00-Assignments/book-00-Assignment-02/index.html">
-              Assignment Two
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-00-first-html-page/index.html">
-              Create your first HTML page
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-01-formatting-text/index.html">
-              Formatting text
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-02-adding-image/index.html">
-              Adding an image
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-03-adding-lists/index.html">
-              Adding lists
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-04-linking-pages/index.html">
-              Linking pages
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-01-HTML/book-05-validating-html/index.html">
-              Validating HTML
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-00-CSS-Introduction/index.html">
-              CSS Introduction
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-01-Adding-Style/index.html">
-              Adding Style
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-02-Adding-Colour/index.html">
-              Adding Colour
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-03-Controlling-the-Font/index.html">
-              Controlling the Font
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-04-Text-Properties/index.html">
-              Text Properties
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-05-Styling-Links/index.html">
-              Styling Links
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-02-CSS-1/book-06-Grouping-Styles/index.html">
-              Grouping Styles
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-03-CSS-2/book-00-Class-and-Id-Selectors/index.html">
-              Id and Class Selectors
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-03-CSS-2/book-01-Descendant-Selectors/index.html">
-              Descendant Selectors
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-03-CSS-2/book-02-Styling-Lists/index.html">
-              Styling Lists
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-03-CSS-2/book-03-CSS-Exercises/index.html">
-              CSS Part Two Lab
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-04-Tables/book-00-Table-Introduction/index.html">
-              Table Introduction
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-04-Tables/book-01-Styling-Tables/index.html">
-              Table Styling
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-04-Tables/book-02-Advanced-Tables/index.html">
-              Advanced Tables
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-04-Tables/book-03-Using-nth-of-type/index.html">
-              Using nth-of-type
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-04-Tables/book-04-Table-Exercises/index.html">
-              HTML Tables Lab
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-05-Deployment/book-00-Set-up-000webhost/index.html">
-              Set up 000 web host
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-05-Deployment/book-01-Set-up-5gbfree/index.html">
-              Set up 5gbfree
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-07-Layout-1/book-00-The-Box-Model/index.html">
-              The Box Model
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-07-Layout-1/book-01-Layout-Positioning/index.html">
-              Layout and Positioning
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-07-Layout-1/book-02-Background-Images/index.html">
-              Background Images
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-08-Layout-2/book-00-Semantic-Layout/index.html">
-              Semantic Layout
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-08-Layout-2/book-01-Figures-and-captions/index.html">
-              Figures and captions
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-08-Layout-2/book-02-Navigation/index.html">
-              Navigation
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-09-semantic-ui-1/book-00-Semantic-Grid/index.html">
-              Semantic UI Grid
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-09-semantic-ui-1/book-02-Semantic-Elements/index.html">
-              Semantic UI Elements
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-10-semantic-ui-2/book-00-Semantic-Tables/index.html">
-              Semantic UI Tables
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-10-semantic-ui-2/book-02-Semantic-Menu/index.html">
-              Semantic UI Menu
-            </a>
-          
-        
-          
-            <a class="item" href="../../topic-10-semantic-ui-2/book-03-Semantic-Cards/index.html">
-              Semantic UI Cards
-            </a>
-          
-        
-      </div>
-      <div class="pusher" tabindex="-1">
-        <div class="ui basic segment" id="labchat">
-          <br>
-          
-            <div  class="ui tab segment lab" data-tab="Assignment One">
-              <h1>Assignment One</h1>
+<div class="ui pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-00-Assignments/book-00-Assignment-01/index.html">Assignment One </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-00-Assignments/book-00-Assignment-02/index.html">Assignment Two </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-00-first-html-page/index.html">Create your first HTML page </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-01-formatting-text/index.html">Formatting text </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-02-adding-image/index.html">Adding an image </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-03-adding-lists/index.html">Adding lists </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-04-linking-pages/index.html">Linking pages </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-05-validating-html/index.html">Validating HTML </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-00-CSS-Introduction/index.html">CSS Introduction </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-01-Adding-Style/index.html">Adding Style </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-02-Adding-Colour/index.html">Adding Colour </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-03-Controlling-the-Font/index.html">Controlling the Font </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-04-Text-Properties/index.html">Text Properties </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-05-Styling-Links/index.html">Styling Links </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-06-Grouping-Styles/index.html">Grouping Styles </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-00-Class-and-Id-Selectors/index.html">Id and Class Selectors </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-01-Descendant-Selectors/index.html">Descendant Selectors </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-02-Styling-Lists/index.html">Styling Lists </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-03-CSS-Exercises/index.html">CSS Part Two Lab </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-00-Table-Introduction/index.html">Table Introduction </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-01-Styling-Tables/index.html">Table Styling </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-02-Advanced-Tables/index.html">Advanced Tables </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-03-Using-nth-of-type/index.html">Using nth-of-type </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-04-Table-Exercises/index.html">HTML Tables Lab </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-05-Deployment/book-00-Set-up-000webhost/index.html">Set up 000 web host </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-05-Deployment/book-01-Set-up-5gbfree/index.html">Set up 5gbfree </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-07-Layout-1/book-00-The-Box-Model/index.html">The Box Model </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-07-Layout-1/book-01-Layout-Positioning/index.html">Layout and Positioning </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-07-Layout-1/book-02-Background-Images/index.html">Background Images </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-08-Layout-2/book-00-Semantic-Layout/index.html">Semantic Layout </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-08-Layout-2/book-01-Figures-and-captions/index.html">Figures and captions </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-08-Layout-2/book-02-Navigation/index.html">Navigation </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-09-semantic-ui-1/book-00-Semantic-Grid/index.html">Semantic UI Grid </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-09-semantic-ui-1/book-02-Semantic-Elements/index.html">Semantic UI Elements </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-10-semantic-ui-2/book-00-Semantic-Tables/index.html">Semantic UI Tables </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-10-semantic-ui-2/book-02-Semantic-Menu/index.html">Semantic UI Menu </a>
+      
+    
+      
+        <a class="item"
+           href="http://witwebdev1.github.io/webdev1//topic-10-semantic-ui-2/book-03-Semantic-Cards/index.html">Semantic UI Cards </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+        <div class="ui tab segment lab" data-tab="Assignment One">
+          <h1>Assignment One</h1>
 <p>This assignment is worth 30% of your grade for this module.</p>
 <p>The purpose of the assignment is to build a website using text, links, graphics, and CSS formatting. All formatting must be done with CSS styles (inside an external CSS file).</p>
 <p>Incorporate as many of the techniques we have covered up to this point in the module. The objective of this project is for you to
@@ -335,10 +307,10 @@ demonstrate all of the techniques you have mastered (all the types of formatting
 <li><a href="http://jigsaw.w3.org/css-validator" target="_ blank"><code>http://jigsaw.w3.org/css-validator</code></a> (for CSS)</li>
 </ul>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="Details">
-              <h2>Assignment Details</h2>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Details">
+          <h2>Assignment Details</h2>
 <p>You are to create a personal website. The website is to contain at least 3 (and no more than 5) web pages.</p>
 <p>Your personal website should contain the following items: </p>
 <ul>
@@ -374,20 +346,20 @@ demonstrate all of the techniques you have mastered (all the types of formatting
 <li>Make sure your webpage validates without errors through both the HTML and CSS validators.</li>
 </ul>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="Submitting your assignment">
-              <h2>Submitting your assignment</h2>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Submitting your assignment">
+          <h2>Submitting your assignment</h2>
 <p>This assignment is due at 6:00pm Friday October 26th. The complete website must be placed inside an assignment folder and deployed on a web server (e.g. 000webhost). You should submit the following to the upload area on Moodle:</p>
 <ul>
 <li>The URL of your website hosted on a web server (e.g. <code>http://yourname.000webhostapp.com</code>)</li>
 <li>Copy and paste the URL into the text box in the upload area</li>
 </ul>
 
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="Marking Scheme">
-              <h1>Marking Scheme</h1>
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Marking Scheme">
+          <h1>Marking Scheme</h1>
 <p>There are four components to your overall mark:</p>
 <ul>
 <li>Folder structure</li>
@@ -419,28 +391,34 @@ demonstrate all of the techniques you have mastered (all the types of formatting
 <li>Creation of an assignment folder (Assignment One) and the website is deployed here.</li>
 </ul>
 
-            </div>
-          
         </div>
-      </div>
+      
     </div>
+  </div>
+</div>
 
-    <script>
-      $(document).ready(function() {
-  const $images = $('.lab img');
-  jQuery.each($images, function(i) {
-    if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
-      $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
-      divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
-    }
-  });
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
 });
 
-      $(document).ready(function() {
+  $(document).ready(function() {
   $('img').addClass('ui image');
 
   $('.ui.embed').embed();
@@ -473,6 +451,6 @@ demonstrate all of the techniques you have mastered (all the types of formatting
     .sidebar('attach events', '#toc');
 });
 
-    </script>
-  </body>
+</script>
+</body>
 </html>
