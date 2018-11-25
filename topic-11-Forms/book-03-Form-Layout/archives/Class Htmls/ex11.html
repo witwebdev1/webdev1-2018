@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Layout 11</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css">
+    <style>
+     .ui.container {
+	   padding-top: 1em;
+     }
+    </style>
+</head>
+<body>
+<div class="ui container">
+
+<form action="" method = "get" class="ui form">
+  <div class="field">
+    <label for = "fname">First Name</label>
+    <input type="text" id = "fname" name="first-name" placeholder="First Name" autofocus>
+  </div>
+  <div class="field">
+    <label for = "lname">Last Name</label>
+    <input type="text" id = "lname" name="last-name" placeholder="Last Name">
+  </div>
+  <div class="grouped fields">
+      <label for="fruit">Select your favourite fruit:</label>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="fruit" checked="" id = "apple" value = "apple">
+          <label for = "apple" >Apples</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="fruit"  id = "orange" value = "orange">
+          <label for = "orange">Oranges</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="fruit" id = "pear" value = "pear">
+          <label for = "pear">Pears</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="fruit" id = "grapefruit" value = "grapefruit">
+          <label for = "grapefruit">Grapefruit</label>
+        </div>
+      </div>
+    </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+
+
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+</html>

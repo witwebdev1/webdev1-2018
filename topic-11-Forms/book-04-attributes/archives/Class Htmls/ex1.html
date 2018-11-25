@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Layout and Validation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <style>
+
+  #MyForm input:invalid {
+    border:solid red 1px;
+  }
+
+  #MyForm input:valid {
+      border:solid olive 1px;
+  }
+
+</style>
+</head>
+<body>
+<section class="ui container">
+  <h1>T & E Project Form</h1>
+  <form action="process.html" id ="MyForm" name = "MyForm" method = "get" class="ui form">
+
+        <h4 class="ui dividing header">Project Information</h4>
+        <div class="inline field">
+          <label for="pname" class = "two wide field">Name</label>
+          <input type="text" class = "four wide field" name="pname"  id="name" required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)?" autofocus title="Please enter a name (Surname optional) with First Letter capitalised">
+        </div>
+        <div class ="inline field">
+          <label for="priority" class = "two wide field">Priority</label>
+          <input type="range" class = "four wide field" min="0" max="10" name="priority" value="0" id="priority">
+        </div>
+
+         <div class ="inline field">
+            <label for="estimated_hours" class = "two wide field">Estimated Hours</label>
+            <input type="number" class="four wide field" name="estimated_hours" min = "2" max = "12" step = "2" id="estimated_hours">
+        </div>
+         <div class ="inline field">
+             <label for="password" class="two wide field">Password</label>
+        	<input type="password" class="four wide field" name="password" id="password" required pattern ="\S{6,}" id="password" title="Please enter a password (at least 6 characters)">
+        </div>
+
+         <div class ="inline field">
+            <label for="start_date" class="two wide field">Start Date</label>
+            <input type="date" class="four wide field" name="start_date" id="start_date" value="2015-01-01">
+        </div>
+
+         <div class ="inline field">
+            <label for="email" class="two wide field">Email contact</label>
+            <input type="email" class="four wide field" name="email"  id="email" required pattern = "[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})" title="Please enter a valid email">
+        </div>
+
+         <div class ="inline field">
+            <label for="url" class="two wide field">Staging URL</label>
+            <input type="url" class="four wide field" name="url"  id="url" required pattern="https?://[a-zA-Z]{3}\.[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}" placeholder = "http://www.example.com" title="Please enter a valid URL">
+        </div>
+
+         <div class ="inline field">
+            <label for="project_color" class="two wide field">Project color</label>
+            <input type="color" class="four wide field" name="project_color" id="project_color">
+        </div>
+
+         <div class ="inline field">
+            <label for="acctnumber" class="two wide field">Account Number</label>
+            <input type="text" class="four wide field" name="acctnumber" id="acctnumber" required pattern="^[1-9]+[0-9]*$" title="Please enter an account number where first digit is between 1 and 9 (inclusive)">
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+        <button class="ui button" type="reset">Reset</button>
+    </form>
+</section>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+</html>
