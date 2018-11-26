@@ -1,0 +1,178 @@
+/*
+CSS for Bubble Under site
+*/
+
+body, html {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+} 
+
+body {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color: #e2edff;
+  line-height: 125%;
+}
+
+#content {
+  margin-top:0;
+  padding-top:0;
+}
+  
+nav {
+  height: 484px;
+  background:  url(../backgrounds/nav-bg.jpg) no-repeat;
+}
+
+header {
+  margin:0;
+  padding:0 !important;
+  background-color:navy;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left:0;
+}
+nav li {
+  padding:.4em 0;
+}
+
+p, blockquote {
+  font-size: small;
+  color: navy;
+}
+
+#tagline {
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+  border-top: 3px solid #7da5d8;
+  border-bottom: 3px solid #7da5d8;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  padding-left: .8em;
+  margin: 0 !important;
+  background: #bed8f3 url(../backgrounds/tagline-fade.jpg) repeat-y right;
+
+}
+
+h1 {
+  font-size: x-large;
+  color: white;
+  padding-top: 2em;
+  padding-bottom: .2em;
+  padding-left: .4em;
+  margin: 0 !important;
+  background: navy url(../backgrounds/header-bg.jpg) repeat-y right bottom;
+}
+
+h2 {
+  padding-top:.5em;
+  color: navy;
+  font-size: 130%;
+  font-weight: normal;
+}
+
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+li {
+  font-size: small;
+}
+
+a {   
+  font-weight: bold; 
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: navy;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: navy;
+}
+
+a:active {
+  color: aqua;
+  background-color: navy;
+}
+
+.fun {
+  color: #339999;
+  font-family: Georgia, Times, serif;
+  letter-spacing: 0.05em;
+}
+
+
+img.feature {
+  float:right;
+  margin-right: 1%;
+}
+
+
+figure {
+  border-bottom: 1px solid navy;
+  margin-bottom: 2%;
+}
+
+figcaption {
+  color:navy;
+  font-size: 75%;
+  font-weight: bold;
+  margin-top: 0;
+  width: 90%;
+  line-height: 1.4em;
+}
+
+figcaption span {
+  font-weight: normal;
+  color: gray;
+}
+legend {   
+  font-weight: bold;   
+  font-size: medium;   
+  color: navy;  
+  border-bottom: 2px solid navy;
+}
+
+
+form#contact label {  
+  font-weight: bold;  
+  font-size: small;  
+  color: blue;  
+  line-height: 150%;
+}
+
+#gallery {
+  width:400px;
+}
+
+#contact input:valid {
+    color: green;
+}
+
+/* Unmatched */
+#contact input:invalid {
+    color: red;
+    border-color:red;
+}
+
+#contact input[type=submit] {
+    color: white;
+}
+
+
+
+
+
+
+
+
