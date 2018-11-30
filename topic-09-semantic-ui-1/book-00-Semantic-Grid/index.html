@@ -135,6 +135,10 @@ html, body {
           06
         </a>
       
+        <a class="item" data-tab="07">
+          07
+        </a>
+      
         <a class="item" data-tab="Exercise-1">
           Exercise-1
         </a>
@@ -380,6 +384,29 @@ html, body {
           </div>
         
           <div class="ui tab segment lab" data-tab="01">
+            <h1>Getting started with SemanticUI</h1>
+<p>We will link to the required SemanticUI files using CloudFlare, a content delivery network (CDN). Note that there are three links you need to include in each page in your website:</p>
+<ul>
+<li>Link to the SemanticUI CSS file, which should go in the <code>&lt;head&gt;</code> section of the page.</li>
+<li>Link to the SemanticUI JavaScript and jQuery files, which should go at the end of your HTML content, before the closing <code>&lt;/body&gt;</code> tag.</li>
+</ul>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css&quot; type=&quot;text/css&quot;&gt;
+  &lt;title&gt;Getting started with SemanticUI&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+...
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="02">
             <h1>Semantic UI Containers</h1>
 <p>Containers provide the foundation for page layout. A container is an element designed to contain page elements to a reasonable maximum width based 
 on the size of a user&#39;s screen. This is useful to couple with other UI elements like <code>grid</code> or <code>menu</code> to restrict their width to a reasonable size for display.</p>
@@ -399,7 +426,7 @@ Containers are the simplest way to center page content inside a grid.</p>
 
           </div>
         
-          <div class="ui tab segment lab" data-tab="02">
+          <div class="ui tab segment lab" data-tab="03">
             <h1>Semantic UI Grid System</h1>
 <p>Grid systems enable you to create advanced layouts using rows and columns.</p>
 <p>Semantic UI uses a 16 column grid, where each column is of equal width with spaces in between. These spaces are called <code>gutters</code>. 
@@ -422,7 +449,7 @@ This means you&#39;ll need to specify that each column takes up a width of four 
 
           </div>
         
-          <div class="ui tab segment lab" data-tab="03">
+          <div class="ui tab segment lab" data-tab="04">
             <h1>Grid Columns and Rows</h1>
 <p>As we saw in our previous example, to create a grid structure we require the <code>ui grid</code> class. Using a grid makes content appear to flow more naturally on your page.</p>
 <h2>Columns</h2>
@@ -553,7 +580,7 @@ following <a href="archives/Class Htmls/eg4a.html" target = "_ blank">example</a
 
           </div>
         
-          <div class="ui tab segment lab" data-tab="04">
+          <div class="ui tab segment lab" data-tab="05">
             <h1>Grid Sizes</h1>
 <p>We can vary the sizes of the columns in the grid and the columns do not have to be even sized. Column widths can be specified using <code>(x) wide</code> class names. 
 If a column cannot fit in a row it will automatically flow to the next row. The following examples prodicce different sized columns.</p>
@@ -588,7 +615,7 @@ If a column cannot fit in a row it will automatically flow to the next row. The 
 
           </div>
         
-          <div class="ui tab segment lab" data-tab="05">
+          <div class="ui tab segment lab" data-tab="06">
             <h1>Varying Grids</h1>
 <h2>Nesting Grids</h2>
 <p>Grids can be placed inside of other grids, letting you sub-divide columns.</p>
@@ -715,7 +742,7 @@ If a column cannot fit in a row it will automatically flow to the next row. The 
 
           </div>
         
-          <div class="ui tab segment lab" data-tab="06">
+          <div class="ui tab segment lab" data-tab="07">
             <h1>Responsive Grids</h1>
 <h2>Containers</h2>
 <p>A container can be used alongside a grid to provide a responsive, fixed width container for wrapping the contents of a page.</p>
