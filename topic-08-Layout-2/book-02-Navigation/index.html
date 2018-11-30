@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
-        type="text/css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css"
-        rel="stylesheet"/>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <style>
-    
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+          type="text/css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css"
+          rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
 body {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
@@ -66,271 +66,299 @@ h3 {
 
 
 
-  </style>
-</head>
+      
 
-<body>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  background: white;
+  text-align: right;
+}
+.content {
+  flex: 1;
+  overflow: auto;
+}
 
 
 
-<div class="ui fixed top pointing inverted stackable menu labmenu">
-  <header class="header item">
-    <i id="toc" class="sitemap icon"></i>
-    
-      <a href="../index.html">  Layout and Images: Part Two  </a>
-    
-  </header>
-  <div class="right tab-menu menu">
-    
-      <a class="item" data-tab="Navigation">
-        Navigation
-      </a>
-    
-      <a class="item" data-tab="01">
-        01
-      </a>
-    
-      <a class="item" data-tab="02">
-        02
-      </a>
-    
-      <a class="item" data-tab="03">
-        03
-      </a>
-    
-      <a class="item" data-tab="Exercise">
-        Exercise
-      </a>
-    
+    </style>
+  </head>
+
+  <body class="uk-background-muted">
+    <div class="wrapper">
+      <div class="content">
+        <div style="height:1000px;">
+          
+  
+
+  <div class="ui fixed top pointing inverted stackable menu labmenu">
+    <header class="header item">
+      <i id="toc" class="sitemap icon"></i>
+      
+        <a href="../index.html">  Layout and Images: Part Two  </a>
+      
+    </header>
+    <div class="right tab-menu menu">
+      
+        <a class="item" data-tab="Navigation">
+          Navigation
+        </a>
+      
+        <a class="item" data-tab="01">
+          01
+        </a>
+      
+        <a class="item" data-tab="02">
+          02
+        </a>
+      
+        <a class="item" data-tab="03">
+          03
+        </a>
+      
+        <a class="item" data-tab="Exercise">
+          Exercise
+        </a>
+      
+    </div>
   </div>
-</div>
 
-<div class="ui pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <br><br>
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-00-Assignments/book-00-Assignment-01/index.html">Assignment One </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-00-Assignments/book-00-Assignment-02/index.html">Assignment Two </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-00-first-html-page/index.html">Create your first HTML page </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-01-formatting-text/index.html">Formatting text </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-02-adding-image/index.html">Adding an image </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-03-adding-lists/index.html">Adding lists </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-04-linking-pages/index.html">Linking pages </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-01-HTML/book-05-validating-html/index.html">Validating HTML </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-00-CSS-Introduction/index.html">CSS Introduction </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-01-Adding-Style/index.html">Adding Style </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-02-Adding-Colour/index.html">Adding Colour </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-03-Controlling-the-Font/index.html">Controlling the Font </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-04-Text-Properties/index.html">Text Properties </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-05-Styling-Links/index.html">Styling Links </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-02-CSS-1/book-06-Grouping-Styles/index.html">Grouping Styles </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-00-Class-and-Id-Selectors/index.html">Id and Class Selectors </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-01-Descendant-Selectors/index.html">Descendant Selectors </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-02-Styling-Lists/index.html">Styling Lists </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-03-CSS-2/book-03-CSS-Exercises/index.html">CSS Part Two Lab </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-00-Table-Introduction/index.html">Table Introduction </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-01-Styling-Tables/index.html">Table Styling </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-02-Advanced-Tables/index.html">Advanced Tables </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-03-Using-nth-of-type/index.html">Using nth-of-type </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-04-Tables/book-04-Table-Exercises/index.html">HTML Tables Lab </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-05-Deployment/book-00-Set-up-000webhost/index.html">Set up 000 web host </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-05-Deployment/book-01-Set-up-5gbfree/index.html">Set up 5gbfree </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-07-Layout-1/book-00-The-Box-Model/index.html">The Box Model </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-07-Layout-1/book-01-Layout-Positioning/index.html">Layout and Positioning </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-07-Layout-1/book-02-Background-Images/index.html">Background Images </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-08-Layout-2/book-00-Semantic-Layout/index.html">Semantic Layout </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-08-Layout-2/book-01-Figures-and-captions/index.html">Figures and captions </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-08-Layout-2/book-02-Navigation/index.html">Navigation </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-09-semantic-ui-1/book-00-Semantic-Grid/index.html">Semantic UI Grid </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-09-semantic-ui-1/book-02-Semantic-Elements/index.html">Semantic UI Elements </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-10-semantic-ui-2/book-00-Semantic-Tables/index.html">Semantic UI Tables </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-10-semantic-ui-2/book-02-Semantic-Menu/index.html">Semantic UI Menu </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-10-semantic-ui-2/book-03-Semantic-Cards/index.html">Semantic UI Cards </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-11-Forms/book-00-Forms/index.html">HTML5 Forms </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-11-Forms/book-01-Elements-1/index.html">HTML5 Elements 1 </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-11-Forms/book-02-Elements-2/index.html">HTML5 Elements 2 </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-11-Forms/book-03-Form-Layout/index.html">Form Layout </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-11-Forms/book-04-Attributes/index.html">Input Attributes </a>
-      
-    
-      
-        <a class="item"
-           href="http://witwebdev1.github.io/webdev1//topic-11-Forms/book-05-Exercise/index.html">Form Exercise </a>
-      
-    
-  </div>
-  <div class="pusher" tabindex="-1">
-    <div class="ui basic segment">
-      <br>
-      
-        <div class="ui tab segment lab" data-tab="Navigation">
-          <h1>Objectives</h1>
+
+  
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <br><br>
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-00-Assignments/book-00-Assignment-01/index.html">Assignment One </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-00-Assignments/book-00-Assignment-02/index.html">Assignment Two </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-01-HTML/book-00-first-html-page/index.html">Create your first HTML page </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-01-HTML/book-01-formatting-text/index.html">Formatting text </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-01-HTML/book-02-adding-image/index.html">Adding an image </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-01-HTML/book-03-adding-lists/index.html">Adding lists </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-01-HTML/book-04-linking-pages/index.html">Linking pages </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-01-HTML/book-05-validating-html/index.html">Validating HTML </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-02-CSS-1/book-00-CSS-Introduction/index.html">CSS Introduction </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-02-CSS-1/book-01-Adding-Style/index.html">Adding Style </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-02-CSS-1/book-02-Adding-Colour/index.html">Adding Colour </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-02-CSS-1/book-03-Controlling-the-Font/index.html">Controlling the Font </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-02-CSS-1/book-04-Text-Properties/index.html">Text Properties </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-02-CSS-1/book-05-Styling-Links/index.html">Styling Links </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-02-CSS-1/book-06-Grouping-Styles/index.html">Grouping Styles </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-03-CSS-2/book-00-Class-and-Id-Selectors/index.html">Id and Class Selectors </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-03-CSS-2/book-01-Descendant-Selectors/index.html">Descendant Selectors </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-03-CSS-2/book-02-Styling-Lists/index.html">Styling Lists </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-03-CSS-2/book-03-CSS-Exercises/index.html">CSS Part Two Lab </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-04-Tables/book-00-Table-Introduction/index.html">Table Introduction </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-04-Tables/book-01-Styling-Tables/index.html">Table Styling </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-04-Tables/book-02-Advanced-Tables/index.html">Advanced Tables </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-04-Tables/book-03-Using-nth-of-type/index.html">Using nth-of-type </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-04-Tables/book-04-Table-Exercises/index.html">HTML Tables Lab </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-05-Deployment/book-00-Set-up-000webhost/index.html">Set up 000 web host </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-05-Deployment/book-01-Set-up-5gbfree/index.html">Set up 5gbfree </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-07-Layout-1/book-00-The-Box-Model/index.html">The Box Model </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-07-Layout-1/book-01-Layout-Positioning/index.html">Layout and Positioning </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-07-Layout-1/book-02-Background-Images/index.html">Background Images </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-08-Layout-2/book-00-Semantic-Layout/index.html">Semantic Layout </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-08-Layout-2/book-01-Figures-and-captions/index.html">Figures and captions </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-08-Layout-2/book-02-Navigation/index.html">Navigation </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-09-semantic-ui-1/book-00-Semantic-Grid/index.html">Semantic UI Grid </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-09-semantic-ui-1/book-02-Semantic-Elements/index.html">Semantic UI Elements </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-10-semantic-ui-2/book-00-Semantic-Tables/index.html">Semantic UI Tables </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-10-semantic-ui-2/book-02-Semantic-Menu/index.html">Semantic UI Menu </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-10-semantic-ui-2/book-03-Semantic-Cards/index.html">Semantic UI Cards </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-11-Forms/book-00-Forms/index.html">HTML5 Forms </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-11-Forms/book-01-Elements-1/index.html">HTML5 Elements 1 </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-11-Forms/book-02-Elements-2/index.html">HTML5 Elements 2 </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-11-Forms/book-03-Form-Layout/index.html">Form Layout </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-11-Forms/book-04-Attributes/index.html">Input Attributes </a>
+        
+      
+        
+          <a class="item"
+             href="https://witwebdev1.github.io/webdev1-2018//topic-11-Forms/book-05-Exercise/index.html">Form Exercise </a>
+        
+      
+    </div>
+    <div class="pusher" tabindex="-1">
+      <div class="ui basic segment">
+        <br>
+        
+          <div class="ui tab segment lab" data-tab="Navigation">
+            <h1>Objectives</h1>
 <p>In this lab, you will learn how to create a horizontal navigation menu. Complete the first exercise detailed in steps 1, 2 and 3 (WIT website); then, complete the additional exercise at the end (Tresidder Union).</p>
 <ul>
 <li><a href="#/01">WIT Website: Adding the HTML</a></li>
@@ -338,10 +366,10 @@ h3 {
 <li><a href="#/03">WIT Website: Styling the nav links</a></li>
 </ul>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="01">
-          <h2>WIT Website: Adding the HTML</h2>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="01">
+            <h2>WIT Website: Adding the HTML</h2>
 <p>In this lab we will add and style structural elements to create another look for our WIT website: a horizontal navigation menu that looks as follows:</p>
 <p><img src="./img/ex1.png" alt=""></p>
 <p>Download <a href="archives/lab04.zip">lab04.zip</a> and extract it into your Week 8 folder. (Don&#39;t continue with the same WIT website files that you worked with in Lab 01; instead, download lab04.zip and start fresh. We want to create a totally different layout for the site in this lab.)</p>
@@ -357,10 +385,10 @@ h3 {
 </ul>
 <p><img src="./img/code.PNG" alt=""></p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="02">
-          <h2>WIT Website: Adding the CSS</h2>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="02">
+            <h2>WIT Website: Adding the CSS</h2>
 <p>Add the following selectors to the .css file (mycss.css):</p>
 <ul>
 <li><p>All the web site content will reside in the container division; here we add a background colour, margin, and a width of 90%.</p>
@@ -390,10 +418,10 @@ text-align:justify;
 <p>After adding these CSS styles, your website should look as follows:</p>
 <p><img src="./img/step2.png" alt=""></p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="03">
-          <h2>WIT Website: Styling the nav links again</h2>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="03">
+            <h2>WIT Website: Styling the nav links again</h2>
 <p>We will now add the styles for the navigation links. As you can see in the HTML files, the navigation for the site is an unordered list that contains a number of links. Add the following styles to mycss.css:</p>
 <ul>
 <li><p>Add padding of 0.5em to the unordered list; use nav ul to target only the unordered list in the nav section (so that any other lists on the website won&#39;t be affected by these styles)</p>
@@ -440,23 +468,25 @@ font-size:90%;
 <p><img src="./img/ex1.png" alt=""></p>
 <p>See the full website here: <a href="archives/example/index.htm" target="_ blank">WIT Website Example</a></p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="Exercise">
-          <h2>Exercise: Tresidder Union</h2>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="Exercise">
+            <h2>Exercise: Tresidder Union</h2>
 <p>In this exercise you are to create a different layout for the Tresidder Union website. You should add structural elements to the HTML file and then add styles to the CSS file, so that the website looks as follows:</p>
 <p><img src="./img/ex2.png" alt=""></p>
 <p>Download <a href="archives/lab05.zip">lab05.zip</a> and extract it into your Week 8 folder. (Again, don&#39;t continue with the same website files that you worked on earlier; the aim is to create a different layout for the Tresidder site, starting from scratch.)</p>
 <p>The 4 different colours for the link items are red; #3333CC; green; and purple.</p>
 
-        </div>
-      
+          </div>
+        
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-  $(document).on('keydown', function(e) {
+
+
+  <script>
+    $(document).on('keydown', function(e) {
   e = e || window.event;
   var nextTab;
   switch (e.which || e.keyCode) {
@@ -476,7 +506,7 @@ font-size:90%;
   }
 });
 
-  $(document).ready(function() {
+    $(document).ready(function() {
   $('img').addClass('ui image');
 
   $('.ui.embed').embed();
@@ -509,6 +539,16 @@ font-size:90%;
     .sidebar('attach events', '#toc');
 });
 
-</script>
-</body>
+  </script>
+
+
+        </div>
+      </div>
+      <div class="footer"> <p> Powered by <a
+          href="https://github.com/edeleastar/tutors-ts">tutors-ts.</a>
+         </p>
+      </div>
+    </div>
+  </body>
+
 </html>
